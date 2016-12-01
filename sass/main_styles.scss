@@ -39,39 +39,39 @@
 }
 
 @font-face {
-  font-family: 'HelveticaNeueLT';
-  src: url('../resources/HelveticaNeueLT-ThinExt/Helvetica LT 33 Thin Extended.eot');
-  src: url('../resources/HelveticaNeueLT-ThinExt/Helvetica LT 33 Thin Extended.woff2') format('woff2'),
-       url('../resources/HelveticaNeueLT-ThinExt/Helvetica LT 33 Thin Extended.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'HelveticaNeueLT';
+	src: url('../resources/HelveticaNeueLT-ThinExt/Helvetica LT 33 Thin Extended.eot');
+	src: url('../resources/HelveticaNeueLT-ThinExt/Helvetica LT 33 Thin Extended.woff2') format('woff2'),
+	url('../resources/HelveticaNeueLT-ThinExt/Helvetica LT 33 Thin Extended.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'HelveticaNeueLT';
-  src: url('../resources/HelveticaNeueLT-ThinExt/HelveticaNeueLT-ThinExt.woff') format('woff'),
-       url('../resources/HelveticaNeueLT-ThinExt/HelveticaNeueLT-ThinExt.ttf') format('truetype'),
-       url('../resources/HelveticaNeueLT-ThinExt/HelveticaNeueLT-ThinExt.svg#HelveticaNeueLT-ThinExt') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'HelveticaNeueLT';
+	src: url('../resources/HelveticaNeueLT-ThinExt/HelveticaNeueLT-ThinExt.woff') format('woff'),
+	url('../resources/HelveticaNeueLT-ThinExt/HelveticaNeueLT-ThinExt.ttf') format('truetype'),
+	url('../resources/HelveticaNeueLT-ThinExt/HelveticaNeueLT-ThinExt.svg#HelveticaNeueLT-ThinExt') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Swis721BT';
-  src: url('../resources/Swis721BT/Swis721-BT-Roman.eot');
-  src: url('../resources/Swis721BT/Swis721-BT-Roman.woff2') format('woff2'),
-       url('../resources/Swis721BT/Swis721-BT-Roman.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Swis721BT';
+	src: url('../resources/Swis721BT/Swis721-BT-Roman.eot');
+	src: url('../resources/Swis721BT/Swis721-BT-Roman.woff2') format('woff2'),
+	url('../resources/Swis721BT/Swis721-BT-Roman.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Swis721BT';
-  src: url('../resources/Swis721BT/Swiss721BT-Roman.woff') format('woff'),
-       url('../resources/Swis721BT/Swiss721BT-Roman.ttf') format('truetype'),
-       url('../resources/Swis721BT/Swiss721BT-Roman.svg#Swiss721BT-Roman') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Swis721BT';
+	src: url('../resources/Swis721BT/Swiss721BT-Roman.woff') format('woff'),
+	url('../resources/Swis721BT/Swiss721BT-Roman.ttf') format('truetype'),
+	url('../resources/Swis721BT/Swiss721BT-Roman.svg#Swiss721BT-Roman') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 
@@ -86,6 +86,8 @@ body {
 
 $OpenSans: 'Open Sans', sans-serif;
 $HelveticaNeueCyr: 'HelveticaNeueCyr', sans-serif;
+$Swiss721BT: 'Swiss721BT', sans-serif;
+$HelveticaNeueLT: 'HelveticaNeueLT', sans-serif;
 $Roboto: 'Roboto', sans-serif;
 
 @mixin site-container {
@@ -130,7 +132,7 @@ $Roboto: 'Roboto', sans-serif;
 @mixin direction {
 	@include site-container;
 	padding: 10px 0 11px;
-	background-color: #d5dde1;
+	background-color: #000;
 	.arrow-back {
 		float: left;
 	}
@@ -138,9 +140,8 @@ $Roboto: 'Roboto', sans-serif;
 		margin: 0 auto;
 		text-align: center;
 		a {
-			color: #069df1;
-			font: 400 18px / 25px #OpenSans;
-			text-transform: uppercase;
+			color: white;
+			font: 400 18px / 25px $Swiss721BT;
 			text-transform: uppercase;
 		}
 	}
@@ -229,6 +230,48 @@ a {
 .direction {
 	@include direction;
 }
+
+.header-logo-block {
+	background-color: #fff;
+	text-align: center;
+	overflow: hidden;
+
+	.company-logo {
+		margin: 7px auto 8px;
+		color: #000101;
+		font: 100 30px / 30px $HelveticaNeueLT;
+	}
+
+	.color-list {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		background-color: #cacaca;
+		overflow: hidden;
+		font-size: 0;
+
+		li {
+			display: inline-block;
+			width: 45px;
+			height: 3px;
+			margin: 0 -3px;
+		}
+
+		.color-1 {
+			background-color: #ffaa01;
+		}
+		.color-2 {
+			background-color: #1a999e;
+		}
+		.color-3 {
+			background-color: #f5de0a;
+		}
+		.color-4 {
+			background-color: #e95e38;
+		}
+	}
+}
+
 // FOR LOGIN PAGE
 @import "login.scss";
 // FOR HEADER ONLY

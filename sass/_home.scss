@@ -1,33 +1,32 @@
-.for-logo {
-    min-width: 154px;
-    width: 100%;
-    max-width: 154px;
-    min-height: 91px;
-    height: 100%;
-    max-height: 91px;
-    margin: 15px auto 35px;
+.for-phone {
+    overflow: hidden;
+    padding: 10px;
+    margin: 0 auto 17px;
+    background-color: #aeaeae;
+    .phone-number {
+        display: block;
+        float: left;
+        width: 80%;
+        padding: 5px 0;
 
-    background: url('../images/edit-logo-bg.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    .edit-title {
-        overflow: hidden;
+        .fa {
+            color: #fff;
+            float: left;
+            margin-right: 10px;
+        }
 
         a {
-            display: block;
-            width: 100%;
-            margin: 0 auto;
-            padding: 53px 0 21px;
-            text-align: center;
-            color: #009af0;
-            font: 400 18px / 18px $OpenSans;
-            
-            @include transition;
+            color: #fff;
+        }
+    }
 
-            &:hover {
-                color: #535353;
-            }
+    .edit {
+        float: right;
+        width: 10%;
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
     }
 }

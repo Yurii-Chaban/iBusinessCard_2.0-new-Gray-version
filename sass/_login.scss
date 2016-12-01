@@ -5,11 +5,6 @@
 	background: url('../images/bage-bg.jpg');
 }
 
-$OpenSans: 'Open Sans', sans-serif;
-$HelveticaNeueCyr: 'HelveticaNeueCyr', sans-serif;
-$Swiss721BT: 'Swiss721BT', sans-serif;
-$HelveticaNeueLT: 'HelveticaNeueLT', sans-serif;
-
 @mixin site-container {
 	position: relative;
 	width: 100%;
@@ -41,47 +36,6 @@ input {
 }
 a {
 	text-decoration: none;
-}
-
-.header-logo-block {
-	background-color: #fff;
-	text-align: center;
-	overflow: hidden;
-
-	.company-logo {
-		margin: 7px auto 8px;
-		color: #000101;
-		font: 100 30px / 30px $HelveticaNeueLT;
-	}
-
-	.color-list {
-		width: 100%;
-		margin: 0 auto;
-		text-align: center;
-		background-color: #cacaca;
-		overflow: hidden;
-		font-size: 0;
-
-		li {
-			display: inline-block;
-			width: 45px;
-			height: 3px;
-			margin: 0 -3px;
-		}
-
-		.color-1 {
-			background-color: #ffaa01;
-		}
-		.color-2 {
-			background-color: #1a999e;
-		}
-		.color-3 {
-			background-color: #f5de0a;
-		}
-		.color-4 {
-			background-color: #e95e38;
-		}
-	}
 }
 
 // HEADER FOR LOGIN PAGE

@@ -19,6 +19,17 @@
 </head>
 <body class="body-background">
 	<header class="inside-page">
+		<div class="header-logo-block">
+			<div class="header-bg">
+				<h2 class="company-logo">Global Vision</h2>
+				<ul class="color-list">
+					<li class="color-1"></li>
+					<li class="color-2"></li>
+					<li class="color-3"></li>
+					<li class="color-4"></li>
+				</ul>
+			</div>
+		</div>
 		<div class="header-top">
 			<div class="wrapper">
 				<!-- mobile menu -->
@@ -36,11 +47,42 @@
 						<li>
 							<a href="about.html">about us</a>
 						</li>
-						<li>
+						<li class="sub-menu">
 							<a href="services.html">services</a>
+							<div class="sub-menu-block">
+								<ul class="submenu-list">
+									<li>
+										<a href="#">Service #1</a>
+									</li>
+									<li>
+										<a href="#">Service #2</a>
+									</li>
+									<li>
+										<a href="#">Service #3</a>
+									</li>
+									<li>
+										<a href="#">Service #4</a>
+									</li>
+								</ul>
+								<a id="new-serv-btn" href="#">+ Add New Service</a>
+							</div>
 						</li>
-						<li>
+						<li class="sub-menu">
 							<a href="blog.html">blog</a>
+							<div class="sub-menu-block">
+								<a id="new-article-btn" href="#">+ Add New Article</a>
+								<ul class="submenu-list">
+									<li>
+										<a href="#">Name of the article # 3</a>
+									</li>
+									<li>
+										<a href="#">Name of the article # 2</a>
+									</li>
+									<li>
+										<a href="#">Name of the article # 1</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 						<li>
 							<a href="contact.html">contact us</a>
@@ -97,13 +139,14 @@
 	</section>
 	<section class="site-container main-page section-padding-bottom">
 		<div class="wrapper">
-			<div class="for-logo">
-				<h4 class="edit-title">
-					<a href="#">
-						Edit logo
-						<span class="fa fa-pencil" aria-hidden="true"></span>
-					</a>
+			<div class="for-phone">
+				<h4 class="phone-number">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<a href="tel:2251264455">225.126.4455</a>
 				</h4>
+				<a class="edit" href="#">
+					<img src="images/icon-edit.png" alt="edit icon">
+				</a>
 			</div>
 		</div>
 		<div class="for-slider">

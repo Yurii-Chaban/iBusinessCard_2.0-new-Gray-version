@@ -4,20 +4,22 @@
 		display: block;
 		position: absolute;
 		list-style:none;
-		padding: 55px 0 0 0;
+		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
-		width: 202px;
-		background-color: #74023b;
-		box-shadow: 2.4px 4.4px 7px rgba(0, 1, 1, 0.26);
+		width: 128px;
+		max-width: 128px;
+		background-color: #656565;
+		box-shadow: -3.5px 3.5px 5px rgba(0, 0, 0, 0.14);
 		height: auto;
-		top: 0;
+		top: 65px;
 		left: -650px;
 		transition: left .2s;
 		z-index: 9;
 		-webkit-transform: classZ(0);
 		-webkit-backface-visibility: hidden;
-		li {
+		
+		& > li {
 			display: block;
 			width: 100%;
 			height: 43px;
@@ -26,24 +28,97 @@
 			line-height: 43px;
 			vertical-align: middle;
 
-			a {
+			& > a {
 				display: block;
 				width: 100%;
 				height: 100%;
 				padding-left: 26px;
-				color: #000;
-				font: 400 18px / 40px $HelveticaNeueCyr;
-				text-transform: uppercase;
+				color: white;
+				font: 400 18px / 40px $Swiss721BT;
+				text-transform: capitalize;
 				@include transition;
+				@include border-box;
 
 				&:hover {
-					color: #fff;
-					background: #00adf5;
+					color: #000;
+					background: #fff;
 				}
 			}
-			a.hidden-menu-active {
+			& > a.hidden-menu-active {
+				color: #000;
+				background: #fff;
+			}
+		}
+		.sub-menu {
+			position: relative;
+
+
+			&:after {
+				position: absolute;
+				content: '\f105';
+				font-family: "FontAwesome";
+				right: 15px;
+				top: 0;
+				font-size: 20px;
 				color: #fff;
-				background: #00adf5;
+				@include transition;
+			}
+
+			&:hover {
+
+				&:after {
+					color: #000;
+				}
+
+				.sub-menu-block {
+					display: block;
+				}
+			}
+
+			.sub-menu-block {
+				display: none;
+				position: absolute;
+				left: 128px;
+				top: 0;
+				width: 165px;
+				background-color: #cdcdcd;
+				box-shadow: -3.5px 3.5px 5px rgba(0, 0, 0, 0.14);
+				@include transition;
+
+				.submenu-list {
+					background-color: #cdcdcd;
+					li {
+						padding: 5px 0 5px 20px;
+						line-height: 22px;
+						@include transition;
+						a {
+							color: black;
+							font: 400 16px / 22px $Swiss721BT;
+							@include transition;
+						}
+
+						&:hover {
+							background-color: #333;
+
+							a {
+								color: #fff;
+							}
+						}
+					}
+				}
+
+				#new-serv-btn,
+				#new-article-btn {
+					display: block;
+					padding: 5px 0 5px 20px;
+					color: black;
+					font: 400 16px / 22px $Swiss721BT;
+					@include transition;
+
+					&:hover {
+						background-color: #333;
+					}
+				}
 			}
 		}
 	}
@@ -73,7 +148,7 @@
 		margin-top: 0;
 	}
 	.hidden-menu-ticker:checked ~ .btn-menu {
-		left: 145px;
+		left: 0;
 		z-index: 99999;
 	}
 	.hidden-menu-ticker:checked ~ .btn-menu span {
@@ -81,11 +156,10 @@
 	}
 	.hidden-menu-ticker:checked ~ .hidden-menu {
 		left: -15px;
-		top: 0;
-		overflow: hidden;
+		top: 65px;
 		margin: 0;
 		z-index: 9999;
-		background-color: #e7f2f6;
+		background-color: #656565;
 		box-shadow: -3.5px 3.5px 5px rgba(0, 0, 0, 0.14);
 	}
 	@media (min-width: 1000px) {
@@ -105,11 +179,11 @@ input:checked+#info-mobile{display:none;}
 	text-align: center;
 
 	.logo-title {
-		color: #fffa02;
+		color: #000;
 		font: 400 18px / 22px $HelveticaNeueCyr;
 
 		a {
-			color: #fffa02;
+			color: #000;
 		}
 	}
 
@@ -142,7 +216,6 @@ input:checked+#info-mobile{display:none;}
 			color: #fff;
 		}
 		.active-setting {
-			color: #fffa3b;
 			color: #000;
 
 			.fa {
@@ -152,7 +225,7 @@ input:checked+#info-mobile{display:none;}
 
 		&:hover {
 			.fa {
-				color: #fffa3b; 
+				color: #000; 
 			}
 		}
 	}
@@ -165,11 +238,11 @@ input:checked+#info-mobile{display:none;}
 	position: absolute;
 	top: 65px;
 	right: 0;
-	max-width: 204px;
-	width: 204px;
+	max-width: 202px;
+	width: 202px;
 	overflow: hidden;
 	height: auto;
-	background-color: #e7f2f6;
+	background-color: white;
 	box-shadow: -3.5px 3.5px 5px rgba(0, 0, 0, 0.14);
 	z-index: 9;
 
@@ -185,12 +258,12 @@ input:checked+#info-mobile{display:none;}
 				height: 100%;
 				padding: 0 27px;
 				color: black;
-				font: 400 18px / 40px $HelveticaNeueCyr;
+				font: 400 18px / 40px $Swiss721BT;
 				@include transition;
 
 				&:hover {
-					color: #fffa3b;
-					background-color: #61abec;
+					color: #fff;
+					background-color: #000;
 				}
 			}
 		}
