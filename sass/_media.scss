@@ -927,6 +927,21 @@
 }
 @media (min-width: 1024px) {
 
+	.login-page-content {
+		.login-block {
+			#login-form {
+				.form-row{
+					#sign-in {
+						margin: 5px auto 0;
+						clear: inherit;
+						width: 115px;
+						float: right;
+					}
+				}
+			}
+		}
+	}
+
 	.section-padding-bottom {
 		padding: 20px 0 350px;
 	}
@@ -1099,7 +1114,7 @@
 		.main-page {
 			.contact-info {
 				.name-company-title {
-				
+
 					.edit-title {
 						margin: 7px 0 0 10px;
 					}

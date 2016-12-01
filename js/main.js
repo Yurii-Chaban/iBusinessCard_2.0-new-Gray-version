@@ -32,20 +32,22 @@ $("#settings").click(function() {
 });
 
 // for slider in Home page
-var swiper_main = new Swiper('.swiper-container-home-page', {
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 0,
-    simulateTouch: true,
-    centeredSlides: true,
-    autoplay: 3500,
-    speed: 1000,
-    watchSlidesProgress: true,
-    autoplayDisableOnInteraction: false
+$(document).ready(function() {
+    var swiper_main = new Swiper('.swiper-container-home-page', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        simulateTouch: true,
+        centeredSlides: true,
+        autoplay: 3500,
+        speed: 1000,
+        watchSlidesProgress: true,
+        autoplayDisableOnInteraction: false
+    });
 });
 // FOR SERVICES PAGE
 // when click on button add item

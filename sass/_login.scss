@@ -7,6 +7,8 @@
 
 $OpenSans: 'Open Sans', sans-serif;
 $HelveticaNeueCyr: 'HelveticaNeueCyr', sans-serif;
+$Swiss721BT: 'Swiss721BT', sans-serif;
+$HelveticaNeueLT: 'HelveticaNeueLT', sans-serif;
 
 @mixin site-container {
 	position: relative;
@@ -41,16 +43,62 @@ a {
 	text-decoration: none;
 }
 
+.header-logo-block {
+	background-color: #fff;
+	text-align: center;
+	overflow: hidden;
+
+	.company-logo {
+		margin: 7px auto 8px;
+		color: #000101;
+		font: 100 30px / 30px $HelveticaNeueLT;
+	}
+
+	.color-list {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		background-color: #cacaca;
+		overflow: hidden;
+		font-size: 0;
+
+		li {
+			display: inline-block;
+			width: 45px;
+			height: 3px;
+			margin: 0 -3px;
+		}
+
+		.color-1 {
+			background-color: #ffaa01;
+		}
+		.color-2 {
+			background-color: #1a999e;
+		}
+		.color-3 {
+			background-color: #f5de0a;
+		}
+		.color-4 {
+			background-color: #e95e38;
+		}
+	}
+}
+
 // HEADER FOR LOGIN PAGE
 .login-page {
 	left: 0;
 	top: 0;
 	width: 100%;
 	position: fixed;
-	height: 65px;
-	background: url('../images/header-bg.jpg');
+	height: auto;
 	background-size: cover;
 	box-shadow: 0 3.5px 4px rgba(0, 0, 0, 0.2);
+
+	.header-top {
+		height: 65px;
+		background: url('../images/header-bg.jpg');
+		background-size: cover;
+	}
 
 	.logo-block {
 		margin: 0 auto;
@@ -58,11 +106,11 @@ a {
 		text-align: center;
 
 		.logo-title {
-			color: #fffa02;
+			color: #000;
 			font: 400 22px / 18px $HelveticaNeueCyr;
 
 			a {
-				color: #fffa02;
+				color: #000;
 			}
 		}
 
@@ -82,7 +130,7 @@ a {
 	.login-block {
 		max-width: 474px;
 		width: 100%;
-    padding: 0 30px 0 29px;
+		padding: 0 30px 0 29px;
 		@include border-box;
 		position: fixed;
 		top: 50%;
@@ -113,14 +161,17 @@ a {
 					display: block;
 					margin: 5px 0;
 					color: black;
-					font: 600 22px / 29px $OpenSans;
+					font: 400 22px / 29px $Swiss721BT;
+					font-size: 22px;
+					font-weight: 400;
+					line-height: 29px;
 				}
 
 				#login,
 				#password {
 					height: 33px;
 					padding-left: 10px;
-					border: 1px solid #56bff8;
+					border: 1px solid #828282;
 					background: inherit;
 					font: 400 20px / 33px $OpenSans;
 				}
@@ -136,8 +187,8 @@ a {
 					overflow: hidden;
 
 					label {
-						color: #009af0;
-						font: 600 18px / 24px $OpenSans;
+						color: black;
+						font: 400 18px / 22px $Swiss721BT;
 						cursor: pointer;
 					}
 
@@ -150,8 +201,8 @@ a {
 						width: 24px;
 						height: 24px;
 						margin: 0 10px 0 0;
-						background-color: #e1ebf4;
-						border: 1px solid #7fbef6; 
+						background-color: gainsboro;
+						border: 1px solid #828282; 
 						cursor: pointer;
 					}
 					#save-password:checked + .checkbox-custom::before {
@@ -170,8 +221,8 @@ a {
 					display: block;
 					overflow: hidden;
 					margin: 20px 0 0 25px;
-					color: #009af0;
-					font: 600 18px / 25px $OpenSans;
+					color: black;
+					font: 400 18px / 22px $Swiss721BT;
 					@include transition;
 
 					&:hover {
@@ -179,14 +230,14 @@ a {
 					}
 				}
 				#sign-in {
-					float: right;
-					margin: 33px 0 0;
-					width: 113px;
-					height: 45px;
+					margin: 33px auto 0;
+					width: 267px;
+					height: 35px;
 					border: inherit;
+					text-align: center;
 					color: white;
-					font: 600 18px / 45px $OpenSans;
-					background-color: #4ec4fc;
+					font: 400 18px / 35px $Swiss721BT;
+					background-color: #000;
 					cursor: pointer;
 				}
 			}
@@ -204,12 +255,12 @@ a {
 
 	.copyright {
 		margin: 0 auto;
-		padding: 8px 0 5px;
+		padding: 0;
 		text-align: center;
 
 		h4 {
-			color: white;
-			font: 400 13px / 29px $OpenSans;
+			color: #fff;
+			font: 400 13px / 24px $OpenSans;
 			a {
 				color: #fff;
 			}
@@ -247,16 +298,15 @@ a {
 
 		height: 61px;
 		.logo-block {
-			float: left;
-	    padding: 10px 0 0;
+			padding: 10px 0 0;
 
-	    .logo-title {
-	    	font: 400 24px/28px "HelveticaNeueCyr", sans-serif;
-	    }
+			.logo-title {
+				font: 400 24px/28px "HelveticaNeueCyr", sans-serif;
+			}
 
-	    .logo-sign {
-	    	font: 400 15px/17px "HelveticaNeueCyr", sans-serif;
-	    }
+			.logo-sign {
+				font: 400 15px/17px "HelveticaNeueCyr", sans-serif;
+			}
 		}
 	}
 
@@ -290,7 +340,8 @@ a {
 						font: 600 14px/25px "Open Sans", sans-serif;
 					}
 					#sign-in {
-						margin: 0;
+						margin: 0 auto;
+						clear: both;
 					}
 				}
 			}

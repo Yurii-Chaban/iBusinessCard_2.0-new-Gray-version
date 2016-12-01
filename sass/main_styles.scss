@@ -38,6 +38,44 @@
 	font-style: normal;
 }
 
+@font-face {
+  font-family: 'HelveticaNeueLT';
+  src: url('../resources/HelveticaNeueLT-ThinExt/Helvetica LT 33 Thin Extended.eot');
+  src: url('../resources/HelveticaNeueLT-ThinExt/Helvetica LT 33 Thin Extended.woff2') format('woff2'),
+       url('../resources/HelveticaNeueLT-ThinExt/Helvetica LT 33 Thin Extended.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLT';
+  src: url('../resources/HelveticaNeueLT-ThinExt/HelveticaNeueLT-ThinExt.woff') format('woff'),
+       url('../resources/HelveticaNeueLT-ThinExt/HelveticaNeueLT-ThinExt.ttf') format('truetype'),
+       url('../resources/HelveticaNeueLT-ThinExt/HelveticaNeueLT-ThinExt.svg#HelveticaNeueLT-ThinExt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Swis721BT';
+  src: url('../resources/Swis721BT/Swis721-BT-Roman.eot');
+  src: url('../resources/Swis721BT/Swis721-BT-Roman.woff2') format('woff2'),
+       url('../resources/Swis721BT/Swis721-BT-Roman.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Swis721BT';
+  src: url('../resources/Swis721BT/Swiss721BT-Roman.woff') format('woff'),
+       url('../resources/Swis721BT/Swiss721BT-Roman.ttf') format('truetype'),
+       url('../resources/Swis721BT/Swiss721BT-Roman.svg#Swiss721BT-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 
 body {
 	font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
