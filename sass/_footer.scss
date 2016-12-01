@@ -1,0 +1,22 @@
+// FOOTER 
+.footer-main,
+.footer-inside {
+	width: 100%;
+	min-height: 14px;
+	background-color: dimgrey;
+	box-shadow: -2.1px 2.1px 4px rgba(0, 0, 0, 0.2);
+
+	.copyright {
+		margin: 0 auto;
+		padding: 8px 0 5px;
+		text-align: center;
+
+		h4 {
+			color: white;
+			font: 400 13px / 29px $OpenSans;
+			a {
+				color: #fff;
+			}
+		}
+	}
+}

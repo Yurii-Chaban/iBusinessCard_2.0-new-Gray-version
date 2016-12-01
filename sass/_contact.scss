@@ -1,0 +1,249 @@
+.main-page {
+	.contact-info {
+		.name-company-title {
+			width: 100%;
+			overflow: hidden;
+			margin: 18px auto;
+			padding: 17px 12px;
+			@include border-box;
+			background-color: #4ec4fc;
+
+			.title {
+				float: left;
+				max-width: 72%;
+				color: white;
+				font: 700 20px / 29px $OpenSans;
+				text-transform: uppercase;
+
+				a {
+					color: #fff;
+				}
+			}
+
+			.edit-title {
+				@include edit;
+				overflow: inherit;
+				float: right;
+				clear: inherit;
+				margin: 7px 0 0;
+			}
+		}
+		.info-list-title {
+			width: 100%;
+			overflow: hidden;
+			margin: 18px auto;
+			padding: 17px 12px;
+			@include border-box;
+			background-color: #4ec4fc;
+
+			.title {
+				float: left;
+				max-width: 72%;
+				color: white;
+				font: 400 30px / 29px $OpenSans;
+				text-transform: uppercase;
+
+				a {
+					color: #fff;
+				}
+			}
+
+			.edit-title {
+				@include edit;
+				overflow: inherit;
+				float: right;
+				clear: inherit;
+				margin: 7px 0 0;
+			}
+		}
+		.info-list-description {
+			@include border-box;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			margin: 21px auto 0;
+			padding: 35px 10px;
+			border: 2px solid #56bff8;
+			.description {
+				float: left;
+				color: #7d7d7d;
+				font: 400 18px / 22px $HelveticaNeueCyr;
+
+				a {
+					color: #7d7d7d;
+					span {
+						display: block;
+					}
+				}
+			}
+
+			.edit-title {
+				@include edit;
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				right: 12px;
+				transform: translateY(-50%);
+				a {
+					color: #009af0;
+					line-height: 25px;
+
+					.wrap-word {
+						display: block;
+						text-align: left;
+					}
+					.fa {
+						margin: 0 0 0 5px;
+					}
+				}
+			}
+		}
+	}
+	.map-block-mobile,
+	.map-block-desctop {
+		@include mapWrapper;
+		position: relative;
+		overflow: hidden;
+		background: url("../images/map-bg.png") no-repeat;
+		background-size: cover;
+
+		.edit-direction {
+			position: absolute;
+			top: 10px;
+			right: 25px;
+			z-index: 10;
+
+			a {
+				display: block;
+				overflow: hidden;
+				color: #09e;
+				font: 400 18px / 20px $HelveticaNeueCyr;
+				// @include transition;
+
+				span {
+					float: left;
+					margin: 5px 5px 0 0;
+				}
+
+				img {
+					float: right;
+				}
+
+				// &:hover {
+				// 	color: #535353;
+				// }
+			}
+			}.map-overflow {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 9;
+				width: 100%;
+				height: 100%;
+				display: block;
+				cursor: pointer;
+			}
+		}
+		.map-block-mobile {
+			max-height: 139px;
+		}
+		.map-block-desctop {
+			display: none;
+		}
+		.social-links-block {
+			clear: both;
+
+			.social-links-title {
+				width: 100%;
+				overflow: hidden;
+				margin: 18px auto;
+				padding: 17px 12px;
+				@include border-box;
+				background-color: #4ec4fc;
+
+				.title {
+					float: left;
+					max-width: 72%;
+					color: white;
+					font: 400 30px / 29px $OpenSans;
+					text-transform: uppercase;
+
+					a {
+						color: #fff;
+					}
+				}
+
+				.edit-title {
+					@include edit;
+					overflow: inherit;
+					float: right;
+					clear: inherit;
+					margin: 7px 0 0;
+				}
+			}
+			.social-list {
+				@include border-box;
+				width: 100%;
+				overflow: hidden;
+
+				li {
+					position: relative;
+					overflow: hidden;
+					width: 43%;
+					padding: 10px 5px;
+					background-color: #4ec4fc;
+
+					&:nth-child(odd) {
+						float: left;
+						clear: left;
+						margin: 10px 10px 10px 0;
+					}
+
+					&:nth-child(even) {
+						float: right;
+						clear: right;
+						margin: 10px 0 10px 10px;
+					}
+
+					.social-icon {
+						.desctop {
+							display: none;
+						}
+
+					}
+					.edit-icon {
+						@include edit;
+						overflow: hidden;
+						clear: inherit;
+						margin: 7px 0 0;
+						float: right;
+						a {
+							color: #fff;
+						}
+					}
+				}
+
+			}
+			.social-control-btn {
+				clear: both;
+				overflow: hidden;
+				.quote-request-btn,
+				.list-request-btn {
+					display: block;
+					max-width: 287px;
+					width: 100%;
+					margin: 18px auto 20px;
+					padding: 15px 0;
+					text-align: center;
+					color: white;
+					font: 600 18px / 29px $OpenSans;
+					background-color: #4ec4fc;
+					@include transition;
+
+					&:hover {
+						background-color: #4d99ed;
+					}
+				}
+			}
+		}
+	}

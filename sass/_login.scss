@@ -1,0 +1,299 @@
+.login-bg {
+	font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	background: url('../images/bage-bg.jpg');
+}
+
+$OpenSans: 'Open Sans', sans-serif;
+$HelveticaNeueCyr: 'HelveticaNeueCyr', sans-serif;
+
+@mixin site-container {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+	background-size: contain;
+	background-position: center;
+}
+@mixin transition {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wrapper {
+	max-width: 1010px;
+	margin: 0 auto;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+input {
+	outline: none;
+}
+a {
+	text-decoration: none;
+}
+
+// HEADER FOR LOGIN PAGE
+.login-page {
+	left: 0;
+	top: 0;
+	width: 100%;
+	position: fixed;
+	height: 65px;
+	background: url('../images/header-bg.jpg');
+	background-size: cover;
+	box-shadow: 0 3.5px 4px rgba(0, 0, 0, 0.2);
+
+	.logo-block {
+		margin: 0 auto;
+		padding: 20px 0 0;
+		text-align: center;
+
+		.logo-title {
+			color: #fffa02;
+			font: 400 22px / 18px $HelveticaNeueCyr;
+
+			a {
+				color: #fffa02;
+			}
+		}
+
+		.logo-sign {
+			color: white;
+			font: 400 13px / 15px $HelveticaNeueCyr;
+
+			a {
+				color: white;
+			}
+		}
+	}
+}
+// MAIN CONTENT FOR LOGIN PAGE
+.login-page-content {
+
+	.login-block {
+		max-width: 474px;
+		width: 100%;
+    padding: 0 30px 0 29px;
+		@include border-box;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: bounceIn;
+		-webkit-animation-fill-mode: both;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-iteration-count: 1;
+		-webkit-animation-timing-function: linear;
+		-moz-animation-name: bounceIn;
+		-moz-animation-fill-mode: both;
+		-moz-animation-duration: 1s;
+		-moz-animation-iteration-count: 1;
+		-moz-animation-timing-function: linear;
+		animation-name: bounceIn;
+		animation-fill-mode: both;
+		animation-duration: 1s;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		#login-form {
+			width: 100%;
+			@include border-box;
+			.form-row {
+				margin-bottom: 15px;
+
+				label {
+					display: block;
+					margin: 5px 0;
+					color: black;
+					font: 600 22px / 29px $OpenSans;
+				}
+
+				#login,
+				#password {
+					height: 33px;
+					padding-left: 10px;
+					border: 1px solid #56bff8;
+					background: inherit;
+					font: 400 20px / 33px $OpenSans;
+				}
+
+				#login,
+				#password,
+				#sign-in {
+					display: block;
+					width: 100%;
+					@include border-box;
+				}
+				.save-password-container {
+					overflow: hidden;
+
+					label {
+						color: #009af0;
+						font: 600 18px / 24px $OpenSans;
+						cursor: pointer;
+					}
+
+					#save-password {
+						display: none;
+					}
+					.checkbox-custom {
+						position: relative;
+						float: left;
+						width: 24px;
+						height: 24px;
+						margin: 0 10px 0 0;
+						background-color: #e1ebf4;
+						border: 1px solid #7fbef6; 
+						cursor: pointer;
+					}
+					#save-password:checked + .checkbox-custom::before {
+						content: "";             
+						display: block;          
+						position: absolute;      
+						top: 2px;
+						right: 2px;
+						bottom: 2px;
+						left: 2px;
+
+						background: #413548;     
+					}
+				}
+				.forgot-password {
+					display: block;
+					overflow: hidden;
+					margin: 20px 0 0 25px;
+					color: #009af0;
+					font: 600 18px / 25px $OpenSans;
+					@include transition;
+
+					&:hover {
+						color: #565656;
+					}
+				}
+				#sign-in {
+					float: right;
+					margin: 33px 0 0;
+					width: 113px;
+					height: 45px;
+					border: inherit;
+					color: white;
+					font: 600 18px / 45px $OpenSans;
+					background-color: #4ec4fc;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+// FOOTER FOR LOGIN PAGE
+.footer-login {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: dimgrey;
+	box-shadow: -2.1px 2.1px 4px rgba(0, 0, 0, 0.2);
+
+	.copyright {
+		margin: 0 auto;
+		padding: 8px 0 5px;
+		text-align: center;
+
+		h4 {
+			color: white;
+			font: 400 13px / 29px $OpenSans;
+			a {
+				color: #fff;
+			}
+		}
+	}
+}
+// MEDIAQUERIES
+@media (min-width: 480px) {
+	.login-block {
+		#login-form {
+			.form-row {
+				.save-password-container {
+					float: left;
+					min-width: 185px;
+				}
+			}
+		}
+	}
+	.login-page-content {
+		.login-block {
+			#login-form {
+				.form-row {
+					.forgot-password {
+						margin: 0 0 0 15px;
+						padding: 5px 0 0;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 560px) {
+
+	.login-page {
+
+		height: 61px;
+		.logo-block {
+			float: left;
+	    padding: 10px 0 0;
+
+	    .logo-title {
+	    	font: 400 24px/28px "HelveticaNeueCyr", sans-serif;
+	    }
+
+	    .logo-sign {
+	    	font: 400 15px/17px "HelveticaNeueCyr", sans-serif;
+	    }
+		}
+	}
+
+	.login-page-content {
+		.login-block {
+			#login-form {
+				.form-row {
+					.save-password-container {
+						min-width: 130px;
+						margin: 5px 0 0 0;
+
+						.checkbox-custom {
+							width: 16px;
+							height: 16px;
+							margin: 4px 6px 0 0;
+						}
+
+						label {
+							font: 600 14px/24px "Open Sans", sans-serif;
+						}
+					}
+				}
+			}
+		}
+		.login-block {
+			#login-form {
+				.form-row {
+					.forgot-password {
+						float: left;
+						margin: 5px 0 0 5px;
+						font: 600 14px/25px "Open Sans", sans-serif;
+					}
+					#sign-in {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}

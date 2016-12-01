@@ -1,0 +1,217 @@
+
+@import "compass/reset";
+
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../resources/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman.eot');
+	src: url('../resources/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+	url('../resources/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman.woff') format('woff'),
+	url('../resources/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman.ttf') format('truetype'),
+	url('../resources/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman') format('svg'),
+	url('../resources/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../resources/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold.eot');
+	src: url('../resources/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+	url('../resources/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold.woff') format('woff'),
+	url('../resources/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold.ttf') format('truetype'),
+	url('../resources/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold.svg#HelveticaNeueCyr-Bold') format('svg'),
+	url('../resources/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../resources/HelveticaNeueCyr/Light/HelveticaNeueCyr-Light.eot');
+	src: url('../resources/HelveticaNeueCyr/Light/HelveticaNeueCyr-Light.woff2') format('woff2'),
+	url('../resources/HelveticaNeueCyr/Light/HelveticaNeueCyr-Light.woff') format('woff'),
+	url('../resources/HelveticaNeueCyr/Light/HelveticaNeueCyr-Light.ttf') format('truetype'),
+	url('../resources/HelveticaNeueCyr/Light/HelveticaNeueCyr-Light.svg#HelveticaNeueCyr-Light') format('svg'),
+	url('../resources/HelveticaNeueCyr/Light/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+	font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	background: #fff;
+}
+
+$OpenSans: 'Open Sans', sans-serif;
+$HelveticaNeueCyr: 'HelveticaNeueCyr', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+
+@mixin site-container {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+	background-size: contain;
+	background-position: center;
+}
+@mixin transition {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@mixin site-pagination {
+	.pagination-list {
+		@include border-box;
+		width: 100%;
+		margin: 34px auto 31px;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			margin: 0 3px;
+
+			a {
+				color: #535353;
+				font: 700 16px / 24px $Roboto;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+@mixin direction {
+	@include site-container;
+	padding: 10px 0 11px;
+	background-color: #d5dde1;
+	.arrow-back {
+		float: left;
+	}
+	.direction-title {
+		margin: 0 auto;
+		text-align: center;
+		a {
+			color: #069df1;
+			font: 400 18px / 25px #OpenSans;
+			text-transform: uppercase;
+			text-transform: uppercase;
+		}
+	}
+}
+@mixin big-title {
+	float: left;
+	color: white;
+	font: 700 30px / 35px $OpenSans;
+	text-transform: uppercase;
+}
+
+@mixin edit {
+	overflow: hidden;
+	margin: 10px 0 0;
+	clear: both;
+
+	a {
+		display: block;
+		float: right;
+		margin: 0 auto;
+		text-align: center;
+		color: #fff;
+		font: 400 18px / 18px $OpenSans;
+		@include transition;
+		
+		&:hover {
+			color: #535353;
+		}
+	}
+}
+
+@mixin mapWrapper {
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+	iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+	}
+}
+
+
+.main-page {
+	.fot-page-title {
+		@include border-box;
+		.page-title {
+			@include border-box;
+			overflow: hidden;
+			width: 100%;
+			padding: 15px 10px;
+			background-color: #4ec4fc;
+
+			.title {
+				float: left;
+				max-width: 72%;
+				a {
+					color: white;
+					font: 700 30px / 35px $OpenSans;
+					text-transform: uppercase;
+				}
+			}
+			.edit-title {
+				@include edit;
+				overflow: inherit;
+				clear: inherit;
+				float: right;
+			}
+		}
+	}
+}
+
+.wrapper {
+	max-width: 1010px;
+	margin: 0 auto;
+	padding: 0 15px;
+	@include border-box;
+	position: relative;
+}
+a {
+	text-decoration: none;
+}
+.direction {
+	@include direction;
+}
+// FOR LOGIN PAGE
+@import "login.scss";
+// FOR HEADER ONLY
+@import "header.scss";
+//FOR MAIN PAGE
+@import "main.scss";
+//FOR HOME PAGE
+@import "home.scss";
+//FOR ABOUT US PAGE
+@import "about.scss";
+//FOR SERVECES PAGE
+@import "services.scss";
+//FOR SERVECES_MORE PAGE
+@import "services_more.scss";
+//FOR BLOG PAGE
+@import "blog.scss";
+//FOR BLOG_MORE PAGE
+@import "blog_more.scss";
+//FOR CONTACT US PAGE
+@import "contact.scss";
+//FOR FOOTER ONLY
+@import "footer.scss";
+//MEDIA QUERIES
+@import "media.scss";
