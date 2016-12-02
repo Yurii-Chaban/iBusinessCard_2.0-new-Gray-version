@@ -31,6 +31,88 @@
     }
 }
 
+.swiper-container {
+    width: 100%;
+    max-width: 980px;
+    height: 100%;
+    min-height: 241px;
+    max-height: 288px;
+    overflow: hidden;
+
+    .swiper-slide {
+        webkit-flex-shrink: 0;
+        -ms-flex: 0 0 auto;
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 241px;
+        max-height: 288px;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+        & > img {
+            z-index: 1;
+            min-width: 100%;
+            width: 100%;
+            max-width: none;
+            min-height: 100%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+        background-image: none;
+    }
+
+    .swiper-button-next {
+        background: url("../images/next.png") no-repeat;
+    }
+    .swiper-button-prev {
+       background: url("../images/prev.png") no-repeat;
+   }
+}
+.swiper-container-horizontal {
+    &>.swiper-pagination-bullets {
+        .swiper-pagination-bullet {
+            display: none;
+            width: 19px;
+            height: 19px;
+            margin: 0 15px;
+            opacity: inherit;
+            background-color: #009af0;
+
+            &:hover {
+                background: #535353;
+            }
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #535353;
+        }
+    }
+}
+
 .for-slider {
     min-width: 320px;
     width: 100%;
@@ -42,79 +124,7 @@
     background: url('../images/slider-default.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    .swiper-container {
-        width: 100%;
-        max-width: 980px;
-        height: 100%;
-        min-height: 241px;
-        max-height: 288px;
-        overflow: hidden;
 
-        .swiper-slide {
-            webkit-flex-shrink: 0;
-            -ms-flex: 0 0 auto;
-            flex-shrink: 0;
-            width: 100%;
-            height: 100%;
-            min-height: 241px;
-            max-height: 288px;
-            position: relative;
-            margin: 0 auto;
-            text-align: center;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-
-            img {
-                z-index: 1;
-                min-width: 100%;
-                width: 100%;
-                max-width: none;
-                min-height: 100%;
-                height: auto;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-            }
-        }
-
-        .swiper-button-next,
-        .swiper-button-prev {
-            display: none;
-        }
-    }
-    .swiper-container-horizontal {
-        &>.swiper-pagination-bullets {
-            .swiper-pagination-bullet {
-                width: 19px;
-                height: 19px;
-                margin: 0 15px;
-                opacity: inherit;
-                background-color: #009af0;
-
-                &:hover {
-                    background: #535353;
-                }
-            }
-
-            .swiper-pagination-bullet-active {
-                background: #535353;
-            }
-        }
-    }
     .edit-slider {
         overflow: hidden;
         position: absolute;
@@ -139,16 +149,11 @@
     }
     .slider-title,
     .slider-description {
-        position: absolute;
         z-index: 2;
-        max-width: 288px;
+        max-width: 230px;
         width: 100%;
         @include border-box;
         overflow: hidden;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 10px;
-        background-color: #4ec4fc;
 
         a {
             color: white;
@@ -163,21 +168,46 @@
         }
     }
     .slider-title {
-        margin: 40px auto 0;
+        margin: 95px auto 5px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 5px;
 
         .title {
-            @include big-title;
-            max-width: 72%;
+            display: inline-block;
+            color: white;
+            font: 400 21px / 25px $Swiss721BT;
+            text-align: left;
+
+            .edit {
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
         }
     }
     .slider-description {
-        margin: 125px auto 0;
+        margin: 0 auto;
 
         .description {
             float: left;
-            max-width: 72%;
             color: white;
-            font: 600 18px / 35px $OpenSans;
+            font: 400 13px / 25px $Swiss721BT;
+
+            .edit {
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
         }
     }
 }
