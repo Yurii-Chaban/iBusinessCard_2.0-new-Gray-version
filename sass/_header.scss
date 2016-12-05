@@ -151,9 +151,9 @@
 		left: 0;
 		z-index: 99999;
 	}
-	.hidden-menu-ticker:checked ~ .btn-menu span {
-		background-color: #00adf5;
-	}
+	// .hidden-menu-ticker:checked ~ .btn-menu span {
+	// 	background-color: #00adf5;
+	// }
 	.hidden-menu-ticker:checked ~ .hidden-menu {
 		left: -15px;
 		top: 65px;

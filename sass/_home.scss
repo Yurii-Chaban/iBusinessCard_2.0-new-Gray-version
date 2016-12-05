@@ -6,7 +6,7 @@
     .phone-number {
         display: block;
         float: left;
-        width: 80%;
+        width: 90%;
         padding: 5px 0;
 
         .fa {
@@ -83,13 +83,16 @@
     .swiper-button-next, 
     .swiper-button-prev {
         background-image: none;
+        width: 16px;
+        height: 28px;
+        background-size: contain;
     }
 
     .swiper-button-next {
-        background: url("../images/next.png") no-repeat;
+        background: url("../images/next-mobile.png") no-repeat;
     }
     .swiper-button-prev {
-       background: url("../images/prev.png") no-repeat;
+       background: url("../images/prev-mobile.png") no-repeat;
    }
 }
 .swiper-container-horizontal {
@@ -114,6 +117,8 @@
 }
 
 .for-slider {
+    position: relative;
+    z-index: 99;
     min-width: 320px;
     width: 100%;
     min-height: 241px;
@@ -121,7 +126,7 @@
     max-height: 288px;
     margin: 0 auto;
     overflow: hidden;
-    background: url('../images/slider-default.jpg') no-repeat;
+    background: url('../images/slider-default.jpg') no-repeat; //if slider item has img then background must be delete
     background-size: cover;
     background-position: center;
 
@@ -168,7 +173,7 @@
         }
     }
     .slider-title {
-        margin: 95px auto 5px;
+        margin: 90px auto 5px;
         border-bottom: 1px solid #000;
         padding-bottom: 5px;
 
@@ -231,33 +236,51 @@
 
     .welcome-title {
         padding: 15px 10px;
-        background-color: #4ec4fc;
+        background-color: #aeaeae;
         .title {
-            @include big-title;
+            float: left;
+            width: 90%;
+            color: black;
+            font: 400 30px / 30px $Swiss721BT;
+            text-transform: capitalize;
+
+            a {
+                color: #000;
+            }
+        }
+
+        .edit-title {
+            overflow: hidden;
+            width: 10%;
+            clear: inherit;
         }
     }
     .welcome-description {
         margin: 21px auto 0;
         padding: 30px 12px;
-        border: 2px solid #56bff8;
+        border: 2px solid #aeaeae;
         .description {
             float: left;
             max-width: 72%;
-            color: #7d7d7d;
-            font: 400 18px / 22px $HelveticaNeueCyr;
+            font: 400 20px / 22px $Swiss721BT;
+            color: black;
 
             a {
-                color: #7d7d7d;
+                color: black;
 
                 span {
                     display: block;
                 }
             }
+
+            .desctop {
+                display: none;
+            }
         }
 
         .edit-title {
             overflow: inherit;
-            margin: 10px 0 0;
+            margin: 0;
             clear: inherit;
             float: right;
             a {
@@ -267,27 +290,39 @@
         }
     }
 }
-.for-services {
+.for-why-us {
 
-    .services-title {
+    .why-us-title {
         z-index: 2;
         width: 100%;
         @include border-box;
         overflow: hidden;
         width: 100%;
         padding: 15px 10px;
-        background-color: #4ec4fc;
-
-        a {
-            color: white;
-        }
+        background-color: #aeaeae;
         .title {
-            @include big-title;
+            float: left;
+            width: 90%;
+            color: black;
+            font: 400 30px / 30px $Swiss721BT;
+            text-transform: capitalize;
+
+            a {
+                color: #000;
+            }
         }
 
         .edit-title {
-            @include edit;
+            overflow: hidden;
+            width: 10%;
+            margin: 5px 0 0;
+            clear: inherit;
         }
+    }
+    .why-serv-bg {
+        background: url("../images/why-us-bg-mobile.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     .services-list {
         box-sizing: border-box;
@@ -295,7 +330,7 @@
         display: block;
         overflow: hidden;
         padding: 20px 0;
-        margin: 0 auto;
+        margin: 10px auto;
         li {
             display: block;
             margin: 30px auto;
@@ -304,141 +339,72 @@
             // max-height: 145px;
             overflow: hidden;
 
-            .icon-container {
-                position: relative;
-                max-width: 140px;
-                max-height: 130px;
-                min-width: 140px;
-                min-height: 130px;
-                margin: 0 auto;
-                text-align: center;
-
-                background: url('../images/services-icon-bg.png') no-repeat;
-                background-position: center;
-
-                img {
-                    max-width: 100%;
-                    height: auto;
-                }
-
-                .edit-title {
-                    @include edit;
-                    position: absolute;
-                    z-index: 9;
-                    width: 100%;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    a {
-                        float :none;
-                        color: #009af0;
-
-                    }
-                }
-            }
-            .services-edit {
-                width: 100%;
+            .services-area-description {
+                height: auto;
                 overflow: hidden;
-                padding: 17px 12px;
-                @include border-box;
-                background-color: #4ec4fc;
-
-                .title {
+                padding: 28px 12px 31px 14px;
+                text-align: left;
+                border: 3px solid white;
+                .description {
                     float: left;
-                    max-width: 72%;
-                    height: auto;
+                    width: 90%;
                     color: white;
-                    font: 400 22px / 29px $OpenSans;
+                    font: 400 20px / 22px $Swiss721BT;
 
                     a {
+                        display: block;
                         color: #fff;
+
+                        span {
+                            display: block;
+                        }
                     }
                 }
 
                 .edit-title {
-                    @include edit;
-                    overflow: inherit;
-                    float: right;
-                    clear: inherit;
-                    margin: 7px 0 0;
+                    overflow: hidden;
+                    width: 10%;
+                    margin: 10px 0 0;
                 }
             }
         }
     }
 }
-.for-blog {
-    padding: 40px 0;
-    background-color: #c9d4d9;
 
-    .blog-list {
-        @include border-box;
-        li {
-            @include border-box;
-            display: block;
-            margin: 25px auto;
-            text-align: center;
+.preffoter-text {
+    .preffoter-description {
+        height: auto;
+        margin: 21px auto 0;
+        padding: 30px 12px;
+        overflow: hidden;
+        border: 2px solid #aeaeae;
+        .description {
+            float: left;
+            max-width: 72%;
+            font: 400 20px / 22px $Swiss721BT;
+            color: black;
 
-            .circle {
-                position: relative;
-                width: 171px;
-                height: 171px;
-                margin: 0 auto;
-                text-align: center;
-                border: 3px solid white;
-                -webkit-border-radius: 100%;
-                -moz-border-radius: 100%;
-                border-radius: 100%;
-                @include border-box;
+            a {
+                color: black;
 
-                .centering {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-
-                    .circle-count {
-                        @include border-box;
-                        color: white;
-                        font: 400 35px / 35px $OpenSans;
-                        text-transform: uppercase;
-                    }
-                    .edit-title {
-                        @include edit;
-
-                        a {
-                            color: #009af0;
-
-                        }
-                    }
+                span {
+                    display: block;
                 }
             }
-            .blog-edit { 
-                margin: 22px auto;
-                width: 100%;
-                overflow: hidden;
-                padding: 17px 12px;
-                @include border-box;
-                background-color: #4ec4fc;
 
-                .title {
-                    float: left;
-                    max-width: 72%;
-                    color: white;
-                    font: 400 20px / 22px $OpenSans;
-                    text-transform: uppercase;
+            .desctop {
+                display: none;
+            }
+        }
 
-                    a {
-                        color: #fff;
-                    }
-                }
+        .edit-title {
+            overflow: inherit;
+            margin: 0;
+            clear: inherit;
+            float: right;
+            a {
+                color: #009af0;
 
-                .edit-title {
-                    @include edit;
-                    overflow: inherit;
-                    float: right;
-                    clear: inherit;
-                    margin: 4px 0 0;
-                }
             }
         }
     }
@@ -446,13 +412,13 @@
 .for-seo-toolbar {
     margin: 25px auto 20px;
     padding: 22px 0;
-    background-color: #e6f1fa;
+    border-bottom: 3px solid #b0b0b0;
 
     .seo-toolbar-title {
         margin: 0 auto;
         text-align: center;
         color: #050505;
-        font: 600 30px / 29px $OpenSans;
+        font: 400 30px / 30px $Swiss721BT;
     }
 
     .seo-toolbar-list {
@@ -466,11 +432,11 @@
             margin: 14px auto;
             padding: 16px 0;
             text-align: center;
-            background-color: #bac8d2;
+            background-color: #b0b0b0;
 
             a {
                 color: white;
-                font: 600 18px / 29px $OpenSans;
+                font: 400 18px / 25px $Swiss721BT;
             }
         }
     }
@@ -478,26 +444,19 @@
 .site-control-btn {
     clear: both;
 }
-.to-website-btn,
-.back-btn {
+.to-website-btn {
     display: block;
     max-width: 287px;
     width: 100%;
     margin: 18px auto 20px;
-    padding: 18px 0;
+    padding: 5px 0;
     text-align: center;
     color: white;
-    font: 600 18px / 29px $OpenSans;
-    background-color: #7ec3fa;
+    font: 400 18px / 30px $Swiss721BT;
+    background-color: #000;
     @include transition;
 
-    &:hover {
-        background-color: #4d99ed;
-    }
 }
 .to-website-btn {
     margin-bottom: 7px;
-}
-.back-btn {
-    margin-top: 7px;
 }
