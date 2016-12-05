@@ -9,6 +9,7 @@
 	}
 	@media (min-width: 768px) {
 
+
 		.for-logo {
 			float: left;
 		}
@@ -164,7 +165,7 @@
 					.title {
 						float: left;
 						a {
-							color: #61abec;
+							color: #000;
 						}
 					}
 					.edit-title {
@@ -172,7 +173,7 @@
 						clear: inherit;
 						margin: 10px 0 0 20px;
 						a {
-							color: #61abec;
+							color: #000;
 						}
 					}
 				}
@@ -181,86 +182,16 @@
 				overflow: hidden;
 				clear: both;
 
+
 				.about-border {
 					position: relative;
-					min-height: 361px;
 					padding: 20px 12px;
-					border: 2px solid #56bff8;
 
-					&:before {
-						position: absolute;
-						content: "";
-						top: 212px;
-						width: 3px;
-						height: 13px;
-						left: -3px;
-						z-index: 99;
-						background: url(../images/bage-bg.jpg) repeat;
-						background-size: cover;
-					}
-
-					&:after {
-						position: absolute;
-						content: "";
-						top: -3px;
-						left: 279px;
-						width: 16px;
-						height: 3px;
-						z-index: 99;
-						background: url(../images/bage-bg.jpg) repeat;
-						background-size: cover;
-					}
-				}
-
-				.photo-border {
-					position: relative;	
-					max-width: 300px;
-					top: -23px;
-					float: left;
-					left: -15px;
-					max-height: 230px;
-					&:before {
-						position: absolute;
-						content: "";
-						bottom: 0;
-						width: 300px;
-						height: 2px;
-						background: #56bff8;
-					}
-
-					&:after {
-						position: absolute;
-						content: "";
-						top: 0;
-						right: 0;
-						width: 2px;
-						height: 230px;
-						background: #56bff8;
-					}
-				}
-
-				.about-photo-container {
-					width: 282px;
-					height: 215px;
-					margin: 0 20px 20px 0;
-					padding: 0;
-					background-position: center;
-
-					img {
-						width: 100%;
-					}
-
-					.edit-title {
-						top: 11px;
-						right: 40px;
-						transform: inherit;
-					}
 				}
 
 				.about-description {
 					margin: 0 auto 21px;
 					overflow: initial;
-					border: initial;
 
 					.description {
 						float: inherit;
@@ -271,7 +202,7 @@
 						}
 					}
 					.edit-title {
-						top: 0;
+						top: 30px;
 						transform: inherit;
 					}
 				}
@@ -890,7 +821,7 @@
 
 	.header-logo-block {
 		.company-logo {
-			margin: 10px auto 4px;
+			margin: 4px auto 4px;
 		}
 
 		.color-list {
@@ -978,7 +909,7 @@
 
 	// main-page 
 	.inside-page {
-		height: 109px;
+		height: 102px;
 		.header-top {
 			height: 49px;
 
@@ -1578,6 +1509,78 @@
 						&:first-child {
 							margin-left: 0;
 						}
+					}
+				}
+			}
+		}
+		.about-desctop-bg {
+			background: url("../images/about-desctop-bg.jpg") no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		.main-page {
+			.fot-page-title {
+				margin: 73px 0 0 39px;
+
+				.page-title {
+					.edit-title {
+						margin: 4px 0 0 8px;
+					}
+				}
+			}
+			.for-about {
+				margin: 0 auto 20px;
+				padding: 0 15px;
+
+				.about-border {
+					padding: 0 12px;
+				}
+				.about-description {
+					padding: 19px 0 19px 25px;
+					border: inherit;
+
+
+
+					.description {
+						font-size: 20px;
+						line-height: 23px;
+						letter-spacing: -1px;
+						height: 319px;
+						overflow-y: scroll;
+						-ms-overflow-style: none;
+						overflow: -moz-scrollbars-none;
+
+						&::-webkit-scrollbar { 
+							display: none;
+							width: 0 !important;
+						}
+
+						.mobile {
+							display: none;
+						}
+						p {
+							margin: 0 auto 15px;
+							.desctop {
+								display: block;
+							}
+						}
+					}
+
+					.edit-title {
+						top: 21px;
+						right: 24px;
+					}
+				}
+			}
+
+			.slider {
+				margin: 34px auto 40px;
+				.center {
+					.prev-btn {
+						left: 13px;
+					}
+					.next-btn {
+						rigth: 17px;
 					}
 				}
 			}

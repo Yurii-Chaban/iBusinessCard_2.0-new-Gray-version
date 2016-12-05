@@ -377,6 +377,7 @@
 
 .preffoter-text {
     max-width: 90%;
+     margin: 0 auto;
     .preffoter-description {
         height: auto;
         margin: 21px auto 0;
@@ -385,7 +386,7 @@
         border: 2px solid #aeaeae;
         .description {
             float: left;
-            max-width: 72%;
+            max-width: 90%;
             font: 400 20px / 22px $Swiss721BT;
             color: black;
 

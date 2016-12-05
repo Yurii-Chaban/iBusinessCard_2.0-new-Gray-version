@@ -65,3 +65,39 @@ $(document).ready(function(){
         $(".articles-list").append(addArticle); 
     });
 });
+// for slider more on About Us page, services-more page and ather
+$(document).ready(function() {
+    $(document).ready(function() {
+        $('.center').slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerPadding: '20px',
+            responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '20px',
+                slidesToShow: 2
+            }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 1
+        }
+    }
+    ],
+    nextArrow: '<img class="next-btn" src="images/more-next.png" alt="more prev">',
+    prevArrow: '<img class="prev-btn" src="images/more-prev.png" alt="more next">',
+});
+    });
+});

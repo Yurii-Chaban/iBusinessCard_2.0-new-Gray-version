@@ -196,15 +196,14 @@ $Roboto: 'Roboto', sans-serif;
 			overflow: hidden;
 			width: 100%;
 			padding: 15px 10px;
-			background-color: #4ec4fc;
+			background-color: #aeaeae;
 
 			.title {
 				float: left;
-				max-width: 72%;
+				max-width: 90%;
 				a {
-					color: white;
-					font: 700 30px / 35px $OpenSans;
-					text-transform: uppercase;
+					color: black;
+					font: 400 30px / 30px $Swiss721BT;
 				}
 			}
 			.edit-title {
