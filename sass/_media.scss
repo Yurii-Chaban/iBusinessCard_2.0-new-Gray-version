@@ -993,7 +993,7 @@
 							background-color: #fff;
 							li {
 								margin: 0;
-								padding: 12px 5px;
+								padding: 5px;
 								line-height: 22px;
 								@include transition;
 								a {
@@ -1513,7 +1513,8 @@
 				}
 			}
 		}
-		.about-desctop-bg {
+		.about-desctop-bg,
+		.serv-more-desctop-bg {
 			background: url("../images/about-desctop-bg.jpg") no-repeat;
 			background-size: cover;
 			background-position: center;
@@ -1528,9 +1529,34 @@
 					}
 				}
 			}
-			.for-about {
+			.serv-more-desctop-bg {
+				.fot-page-title {
+					margin: 73px 0 0 0;
+				}
+				.slider {
+					.center {
+						.prev-btn {
+							left: 14px;
+						}
+						.next-btn {
+							right: 17px;
+						}
+					}
+				}
+			}
+			.serv-more-slider {
+				margin: 0 auto 4px;
+				padding: 0 0 33px;
+				border-bottom: 2px solid;
+			}
+			.for-about{
 				margin: 0 auto 20px;
 				padding: 0 15px;
+				clear: both;
+
+				.wrapper {
+					padding: 0 15px;
+				}
 
 				.about-border {
 					padding: 0 12px;
@@ -1545,7 +1571,7 @@
 						font-size: 20px;
 						line-height: 23px;
 						letter-spacing: -1px;
-						height: 319px;
+						height: 317px;
 						overflow-y: scroll;
 						-ms-overflow-style: none;
 						overflow: -moz-scrollbars-none;
@@ -1572,15 +1598,56 @@
 					}
 				}
 			}
+			.for-services-more-icon {
+				float: left;
+				margin: 57px 18px 0 30px;
+			}
+			.for-serv-more {
+				margin: 0 auto 37px;
+				padding: 0 15px 21px;
+				clear: both;
 
-			.slider {
-				margin: 34px auto 40px;
-				.center {
-					.prev-btn {
-						left: 13px;
+				.wrapper {
+					padding: 0 15px;
+				}
+
+				.serv-more-border {
+					padding: 0 12px;
+				}
+				.serv-more-description {
+					padding: 19px 0 19px 25px;
+					border: inherit;
+
+
+
+					.description {
+						font-size: 20px;
+						line-height: 23px;
+						letter-spacing: -1px;
+						height: 317px;
+						overflow-y: scroll;
+						-ms-overflow-style: none;
+						overflow: -moz-scrollbars-none;
+
+						&::-webkit-scrollbar { 
+							display: none;
+							width: 0 !important;
+						}
+
+						.mobile {
+							display: none;
+						}
+						p {
+							margin: 0 auto 15px;
+							.desctop {
+								display: block;
+							}
+						}
 					}
-					.next-btn {
-						rigth: 17px;
+
+					.edit-title {
+						top: 21px;
+						right: 24px;
 					}
 				}
 			}

@@ -3,41 +3,16 @@
 		margin: 20px auto;
 		padding: 0 15px;
 
+		.wrapper {
+			padding: 0;
+		}
+
 		.about-border {
 			position: relative;
 		}
 
 		.photo-border {
 			position: relative;
-		}
-		.about-photo-container {
-			width: 100%;
-			height: 96px;
-			
-			margin: 20px auto;
-			overflow: hidden;
-			background: #d5dde1 url(../images/photo-icon.png) no-repeat;
-			background-position: 10% center;
-
-			.edit-title {
-				@include edit;
-				margin: 0;
-				position: absolute;
-				top: 50%;
-				right: 12px;
-				transform: translateY(-50%);
-
-				a {
-					color: #009af0;
-				}
-			}
-
-			img {
-				max-width: 100%;
-				// width: 100%;
-				height: auto;
-				max-height: 100%;
-			}
 		}
 		.about-description {
 			@include border-box;
@@ -107,7 +82,8 @@
 
 				img {
 					display: block;
-					width: auto;
+					// width: auto;
+					width: 100%;
 					height: 100%;
 					margin: 0 auto;
 					text-align: center;
