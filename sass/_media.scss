@@ -155,14 +155,17 @@
 		/*-------------------------------------------------------------------------------*/
 		// FOR ABOUT US PAGE
 		.main-page {
-			.fot-page-title {
+			.fot-page-title,
+			.for-post-date {
 				float: left;
 
-				.page-title {
+				.page-title,
+				.post-date {
 					background-color: inherit;
 					padding: 15px 10px 15px 0;
 
-					.title {
+					.title,
+					.date {
 						float: left;
 						a {
 							color: #000;
@@ -177,6 +180,9 @@
 						}
 					}
 				}
+			}
+			.for-post-date {
+				margin: 0 auto;
 			}
 			.for-about {
 				overflow: hidden;
@@ -502,177 +508,6 @@
 
 	/*-------------------------------------------------------------------------------*/
 	/*-------------------------------------------------------------------------------*/
-	// FOR BLOG MORE PAGE
-	.main-page {
-
-		.article-more-title,
-		.article-more-post-date {
-			background: inherit;
-			padding: 5px 12px 5px 0;
-
-			.title {
-				a {
-					color: #61abec;
-				}
-			}
-
-			.edit-title {
-				clear: inherit;
-				float: left;
-				margin: 7px 0 0 10px;
-
-				a {
-					color: #61abec;
-				}
-			}
-		}
-
-		.article-more-title {
-			.title {
-				a {
-					font: 400 30px /33px $OpenSans;
-				}
-			}
-			.edit-title {
-				margin: 12px 0 0 10px;
-			}
-		}
-
-		.article-more-post-date {
-			margin: 0 auto;
-		}
-
-		.for-blog-more {
-			overflow: hidden;
-			clear: both;
-
-			.blog-more-border {
-				position: relative;
-				min-height: 361px;
-				padding: 20px 12px;
-				border: 2px solid #56bff8;
-
-				&:before {
-					position: absolute;
-					content: "";
-					top: 212px;
-					width: 3px;
-					height: 13px;
-					left: -3px;
-					z-index: 99;
-					background: url(../images/bage-bg.jpg) repeat;
-					background-size: cover;
-				}
-
-				&:after {
-					position: absolute;
-					content: "";
-					top: -3px;
-					left: 279px;
-					width: 16px;
-					height: 3px;
-					z-index: 99;
-					background: url(../images/bage-bg.jpg) repeat;
-					background-size: cover;
-				}
-			}
-
-			.photo-border {
-				position: relative;	
-				max-width: 300px;
-				top: -23px;
-				float: left;
-				left: -15px;
-				max-height: 230px;
-				&:before {
-					position: absolute;
-					content: "";
-					bottom: 0;
-					width: 300px;
-					height: 2px;
-					background: #56bff8;
-				}
-
-				&:after {
-					position: absolute;
-					content: "";
-					top: 0;
-					right: 0;
-					width: 2px;
-					height: 230px;
-					background: #56bff8;
-				}
-			}
-
-			.blog-more-photo-container {
-				width: 282px;
-				height: 215px;
-				margin: 0 20px 20px 0;
-				padding: 0;
-				background-position: center;
-
-				img {
-					width: 100%;
-				}
-
-				.edit-title {
-					top: 11px;
-					right: 40px;
-					transform: inherit;
-				}
-			}
-
-			.blog-more-description {
-				margin: 0 auto 21px;
-				overflow: initial;
-				border: initial;
-
-				.description {
-					float: inherit;
-					a {
-						span {
-							display: inline;
-						}
-					}
-				}
-				.edit-title {
-					top: 0;
-					transform: inherit;
-				}
-			}
-		}
-		.for-blog-more-photo {
-			overflow: hidden;
-			.photo-container {
-				float: left;
-				width: 187px;
-				height: 141px;
-				margin: 6px;
-				background-position: center;
-
-				img {
-					width: 100%;
-				}
-
-				.edit-title {
-					top: 11px;
-					right: 10px;
-					transform: inherit;
-				}
-			}
-		}
-		.for-video-wrapper {
-			margin: 30px auto;
-			.video-container {
-				background-position: center;
-				.edit-title {
-					top: 11px;
-					right: 11px;
-					transform: inherit;
-				}
-			}
-		}
-	}
 	/*-------------------------------------------------------------------------------*/
 	// FOR CONTACT US PAGE
 	.main-page {
@@ -818,6 +653,19 @@
 
 }
 @media (min-width: 1024px) {
+
+	.main-page {
+		.slider {
+			.center {
+				.prev-btn {
+					left: 14px;
+				}
+				.next-btn {
+					right: 17px;
+				}
+			}
+		}
+	}
 
 	.header-logo-block {
 		.company-logo {
@@ -1514,10 +1362,46 @@
 			}
 		}
 		.about-desctop-bg,
-		.serv-more-desctop-bg {
+		.serv-more-desctop-bg,
+		.blog-more-desctop-bg {
 			background: url("../images/about-desctop-bg.jpg") no-repeat;
 			background-size: cover;
 			background-position: center;
+		}
+
+		.blog-more-desctop-bg {
+			.fot-page-title {
+				margin: 52px 0 0 35px !important;
+				min-width: 40%;
+
+				.page-title {
+
+					.title {
+						a {
+							font-size: 30px;
+						}
+					}
+					.edit-title {
+						margin: 4px 0 0 8px;
+					}
+				}
+			}
+			.for-post-date {
+				margin: -11px 0 0 35px;
+				letter-spacing: 1px;
+
+				.post-date {
+					padding: 0 10px 15px 0;
+					.date {
+						a {
+							line-height: 23px;
+						}
+					}
+					.edit-title {
+						margin: 2px 0 0 3px;
+					}
+				}
+			}
 		}
 		.main-page {
 			.fot-page-title {
@@ -1547,7 +1431,7 @@
 			.serv-more-slider {
 				margin: 0 auto 4px;
 				padding: 0 0 33px;
-				border-bottom: 2px solid;
+				border-bottom: 3px solid #aeaeae;
 			}
 			.for-about{
 				margin: 0 auto 20px;
@@ -1562,7 +1446,7 @@
 					padding: 0 12px;
 				}
 				.about-description {
-					padding: 19px 0 19px 25px;
+					padding: 12px 0 19px 41px;
 					border: inherit;
 
 
@@ -1615,7 +1499,7 @@
 					padding: 0 12px;
 				}
 				.serv-more-description {
-					padding: 19px 0 19px 25px;
+					padding: 12px 0 19px 41px;
 					border: inherit;
 
 
@@ -1650,6 +1534,61 @@
 						right: 24px;
 					}
 				}
+			}
+
+			.for-blog-more {
+				margin: 0 auto 37px;
+				padding: 0 15px 21px;
+				clear: both;
+
+				.wrapper {
+					padding: 0 15px;
+				}
+
+				.blog-more-border {
+					padding: 0 12px;
+				}
+				.blog-more-description {
+					padding: 12px 0 19px 41px;
+					border: inherit;
+
+
+
+					.description {
+						font-size: 20px;
+						line-height: 23px;
+						letter-spacing: -1px;
+						height: 317px;
+						overflow-y: scroll;
+						-ms-overflow-style: none;
+						overflow: -moz-scrollbars-none;
+
+						&::-webkit-scrollbar { 
+							display: none;
+							width: 0 !important;
+						}
+
+						.mobile {
+							display: none;
+						}
+						p {
+							margin: 0 auto 15px;
+							.desctop {
+								display: block;
+							}
+						}
+					}
+
+					.edit-title {
+						top: 21px;
+						right: 24px;
+					}
+				}
+			}
+			.blog-more-slider {
+				margin: 0 auto 4px;
+				padding: 0 0 33px;
+				border-bottom: 3px solid #aeaeae;
 			}
 		}
 	}
