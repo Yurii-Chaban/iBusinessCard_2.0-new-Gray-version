@@ -1,4 +1,13 @@
 .main-page {
+
+	.contact-desctop-bg {
+		.fot-page-title {
+			.page-title {
+				padding: 8px 10px;
+			}
+		}
+	}
+
 	.contact-info {
 		.name-company-title {
 			width: 100%;
@@ -32,19 +41,18 @@
 			width: 100%;
 			overflow: hidden;
 			margin: 18px auto;
-			padding: 17px 12px;
+			padding: 9px 12px;
 			@include border-box;
-			background-color: #4ec4fc;
+			background-color: #aeaeae;
 
 			.title {
 				float: left;
 				max-width: 72%;
-				color: white;
-				font: 400 30px / 29px $OpenSans;
-				text-transform: uppercase;
+				color: black;
+				font: 400 30px / 30px $Swiss721BT;
 
 				a {
-					color: #fff;
+					color: #000;
 				}
 			}
 
@@ -63,14 +71,14 @@
 			width: 100%;
 			margin: 21px auto 0;
 			padding: 35px 10px;
-			border: 2px solid #56bff8;
+			border: 2px solid #aeaeae;
 			.description {
 				float: left;
-				color: #7d7d7d;
-				font: 400 18px / 22px $HelveticaNeueCyr;
+				font: 400 20px / 22px $Swiss721BT;
+				color: #000;
 
 				a {
-					color: #7d7d7d;
+					color: #000;
 					span {
 						display: block;
 					}
@@ -116,9 +124,8 @@
 			a {
 				display: block;
 				overflow: hidden;
-				color: #09e;
+				color: black;
 				font: 400 18px / 20px $HelveticaNeueCyr;
-				// @include transition;
 
 				span {
 					float: left;
@@ -129,9 +136,6 @@
 					float: right;
 				}
 
-				// &:hover {
-				// 	color: #535353;
-				// }
 			}
 			}.map-overflow {
 				position: absolute;
@@ -157,19 +161,19 @@
 				width: 100%;
 				overflow: hidden;
 				margin: 18px auto;
-				padding: 17px 12px;
+				padding: 9px 12px;
 				@include border-box;
-				background-color: #4ec4fc;
+				background-color: #aeaeae;
 
 				.title {
 					float: left;
 					max-width: 72%;
-					color: white;
-					font: 400 30px / 29px $OpenSans;
-					text-transform: uppercase;
+					color: black;
+					font: 400 30px / 30px $Swiss721BT;
+					text-transform: capitalize;
 
 					a {
-						color: #fff;
+						color: #000;
 					}
 				}
 
@@ -191,7 +195,8 @@
 					overflow: hidden;
 					width: 43%;
 					padding: 10px 5px;
-					background-color: #4ec4fc;
+					background-color: #aeaeae;
+					text-align: center;
 
 					&:nth-child(odd) {
 						float: left;
@@ -206,17 +211,12 @@
 					}
 
 					.social-icon {
-						.desctop {
-							display: none;
-						}
+						display: inline-block;
+						text-align: center;
 
 					}
 					.edit-icon {
-						@include edit;
-						overflow: hidden;
-						clear: inherit;
-						margin: 7px 0 0;
-						float: right;
+						display: inline-block;
 						a {
 							color: #fff;
 						}
@@ -233,17 +233,18 @@
 					max-width: 287px;
 					width: 100%;
 					margin: 18px auto 20px;
-					padding: 15px 0;
+					padding: 7px 0;
 					text-align: center;
 					color: white;
-					font: 600 18px / 29px $OpenSans;
-					background-color: #4ec4fc;
+					font: 400 18px / 29px $Swiss721BT;
+					background-color: #b0b0b0;
 					@include transition;
 
 					&:hover {
-						background-color: #4d99ed;
+						background-color: #000;
 					}
 				}
+
 			}
 		}
 	}

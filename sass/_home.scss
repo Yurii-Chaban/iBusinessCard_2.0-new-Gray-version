@@ -1,3 +1,6 @@
+.header-desctop-menu {
+    display: none;
+}
 .for-phone {
     overflow: hidden;
     padding: 10px;
@@ -33,11 +36,11 @@
 
 .swiper-container {
     width: 100%;
-    max-width: 980px;
     height: 100%;
     min-height: 241px;
     max-height: 288px;
     overflow: hidden;
+    background: url('../images/slider-default.jpg') no-repeat; 
 
     .swiper-slide {
         webkit-flex-shrink: 0;
@@ -86,6 +89,7 @@
         width: 16px;
         height: 28px;
         background-size: contain;
+        margin-top: -145px;
     }
 
     .swiper-button-next {
@@ -126,7 +130,6 @@
     max-height: 288px;
     margin: 0 auto;
     overflow: hidden;
-    background: url('../images/slider-default.jpg') no-repeat; //if slider item has img then background must be delete
     background-size: cover;
     background-position: center;
 
@@ -256,8 +259,9 @@
         }
     }
     .welcome-description {
+        max-width: 90%;
         margin: 21px auto 0;
-        padding: 30px 12px;
+        padding: 30px 0;
         border: 2px solid #aeaeae;
         .description {
             float: left;
@@ -372,6 +376,9 @@
 }
 
 .preffoter-text {
+    max-width: 90%;
+    margin: 0 auto;
+    clear: both;
     .preffoter-description {
         height: auto;
         margin: 21px auto 0;
@@ -380,7 +387,7 @@
         border: 2px solid #aeaeae;
         .description {
             float: left;
-            max-width: 72%;
+            max-width: 90%;
             font: 400 20px / 22px $Swiss721BT;
             color: black;
 
@@ -410,9 +417,10 @@
     }
 }
 .for-seo-toolbar {
+    max-width: 980px;
     margin: 25px auto 20px;
     padding: 22px 0;
-    border-bottom: 3px solid #b0b0b0;
+    border-bottom: 3px solid #aeaeae;
 
     .seo-toolbar-title {
         margin: 0 auto;
@@ -432,7 +440,7 @@
             margin: 14px auto;
             padding: 16px 0;
             text-align: center;
-            background-color: #b0b0b0;
+            background-color: #aeaeae;
 
             a {
                 color: white;
@@ -453,8 +461,12 @@
     text-align: center;
     color: white;
     font: 400 18px / 30px $Swiss721BT;
-    background-color: #000;
+    background-color: #b0b0b0;
     @include transition;
+
+    &:hover {
+        background-color: #000;
+    }
 
 }
 .to-website-btn {

@@ -13,12 +13,26 @@
 	<!-- Include styles -->
 	<link rel="stylesheet" href="stylesheets/font-awesome.css">
 	<!--- Component CSS -->
+	<link rel="stylesheet" href="stylesheets/slick.css">
+	<link rel="stylesheet" href="stylesheets/slick-theme.css">
 	<link rel="stylesheet" href="stylesheets/swiper.min.css">
-	<link rel="stylesheet" href="stylesheets/mack_os_dock_menu.css">
 	<link rel="stylesheet" href="stylesheets/main_styles.css">
 </head>
 <body class="body-background">
 	<header class="inside-page">
+		<div class="header-logo-block">
+			<div class="header-bg">
+				<h2 class="company-logo">
+					<a href="index.html">Global Vision</a>
+				</h2>
+				<ul class="color-list">
+					<li class="color-1"></li>
+					<li class="color-2"></li>
+					<li class="color-3"></li>
+					<li class="color-4"></li>
+				</ul>
+			</div>
+		</div>
 		<div class="header-top">
 			<div class="wrapper">
 				<!-- mobile menu -->
@@ -31,16 +45,47 @@
 					</label>
 					<ul class="hidden-menu">
 						<li>
-							<a href="home.html">Home</a>
+							<a href="index.html">Home</a>
 						</li>
 						<li>
-							<a href="about.html">About us</a>
+							<a href="about.html">about us</a>
 						</li>
-						<li>
+						<li class="sub-menu services-submenu">
 							<a href="services.html">services</a>
+							<div class="sub-menu-block">
+								<ul class="submenu-list">
+									<li>
+										<a href="services_more.html">Service #1</a>
+									</li>
+									<li>
+										<a href="services_more.html">Service #2</a>
+									</li>
+									<li>
+										<a href="services_more.html">Service #3</a>
+									</li>
+									<li>
+										<a href="services_more.html">Service #4</a>
+									</li>
+								</ul>
+								<a id="new-serv-btn" href="#">+ Add New Service</a>
+							</div>
 						</li>
-						<li>
-							<a href="blog.html">blog</a>
+						<li class="sub-menu blog-submenu">
+							<a href="#">blog</a>
+							<div class="sub-menu-block">
+								<a id="new-article-btn" href="#">+ Add New Article</a>
+								<ul class="submenu-list">
+									<li>
+										<a href="blog-more.html">Name of the article # 3</a>
+									</li>
+									<li>
+										<a href="blog-more.html">Name of the article # 2</a>
+									</li>
+									<li>
+										<a href="blog-more.html">Name of the article # 1</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 						<li>
 							<a href="contact.html">contact us</a>
@@ -51,11 +96,11 @@
 				<div class="settings-block">
 					<a id="settings" href="#">
 						<span class="fa fa-cog" aria-hidden="true"></span>
-						<span class="position-word">Settings</span>
+						<!-- <span class="position-word">Settings</span> -->
 					</a>
 					<a id="log-out" href="#">
 						<span class="fa fa-sign-out" aria-hidden="true"></span>
-						<span class="position-word">Sign&nbsp;out</span>
+						<!-- <span class="position-word">Sign&nbsp;out</span> -->
 					</a>
 				</div>
 				<div id="sett" class="open-settings" style="display: none;">
@@ -76,12 +121,64 @@
 				</div>
 				<div class="logo-block">
 					<h1 class="logo-title">
-						<a href="main.html">iBusinessCard 2.0</a>
+						<a href="index.html">iBusinessCard 2.0</a>
 					</h1>
 					<h2 class="logo-sign">
-						<a href="main.html">Content Management System</a>
+						<a href="index.html">Content Management System</a>
 					</h2>
 				</div>
+			</div>
+		</div>
+		<div class="header-desctop-menu">
+			<div class="wrapper">
+				<ul class="menu-list">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">about us</a>
+					</li>
+					<li class="sub-menu services-submenu">
+						<a href="services.html">services</a>
+						<div class="sub-menu-block">
+							<ul class="submenu-list">
+								<li>
+									<a href="services_more.html">Service #1</a>
+								</li>
+								<li>
+									<a href="services_more.html">Service #2</a>
+								</li>
+								<li>
+									<a href="services_more.html">Service #3</a>
+								</li>
+								<li>
+									<a href="services_more.html">Service #4</a>
+								</li>
+							</ul>
+							<a id="new-serv-btn" href="#">+ Add New Service</a>
+						</div>
+					</li>
+					<li class="sub-menu blog-submenu">
+						<a href="#">blog</a>
+						<div class="sub-menu-block">
+							<a id="new-article-btn" href="#">+ Add New Article</a>
+							<ul class="submenu-list">
+								<li>
+									<a href="blog-more.html">Name of the article # 3</a>
+								</li>
+								<li>
+									<a href="blog-more.html">Name of the article # 2</a>
+								</li>
+								<li>
+									<a href="blog-more.html">Name of the article # 1</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="contact.html">contact us</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</header>
@@ -96,132 +193,212 @@
 		</div>
 	</section>
 	<section class="site-container main-page section-padding-bottom">
-		<div class="wrapper">
-			<div class="fot-page-title">
-				<div class="page-title">
-					<h2 class="title">
-						<a href="#">Contact Us</a>
-					</h2>
-					<h4 class="edit-title">
-						<a href="#">
-							Edit
-							<span class="fa fa-pencil" aria-hidden="true"></span>
-						</a>
+		<div class="contact-desctop-bg">
+			<div class="wrapper">
+				<div class="for-phone">
+					<h4 class="phone-number">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<a href="tel:2251264455">225.126.4455</a>
 					</h4>
+					<a class="edit" href="#">
+						<img src="images/icon-edit.png" alt="edit icon">
+					</a>
+				</div>
+				<div class="fot-page-title">
+					<div class="page-title">
+						<h2 class="title">
+							<a href="#">Contact Us</a>
+						</h2>
+						<h3 class="edit-title">
+							<a href="#">
+								<img src="images/icon-edit.png" alt="edit icon">
+							</a>
+						</h3>
+					</div>
+				</div>
+				<div class="contact-info">
+					<ul class="info-list">
+						<li>
+							<div class="info-list-title">
+								<h3 class="title">
+									<a href="#">Address:</a>
+								</h3>
+								<h3 class="edit-title">
+									<a href="#">
+										<img src="images/icon-edit.png" alt="edit icon">
+									</a>
+								</h3>
+							</div>
+							<div class="info-list-description">
+								<h3 class="description">
+									<a href="#">Your address...</a>
+								</h3>
+								<h3 class="edit-title">
+									<a href="#">
+										<img src="images/icon-edit.png" alt="edit icon">
+									</a>
+								</h3>
+							</div>
+						</li>
+						<li>
+							<div class="info-list-title" onclick="$('.map-overflow').removeAttr('style')">
+								<h3 class="title">
+									<a href="#">Phone:</a>
+								</h3>
+								<h3 class="edit-title">
+									<a href="#">
+										<img src="images/icon-edit.png" alt="edit icon">
+									</a>
+								</h3>
+							</div>
+							<div class="info-list-description">
+								<h3 class="description">
+									<a href="#">Your phone...</a>
+								</h3>
+								<h3 class="edit-title">
+									<a href="#">
+										<img src="images/icon-edit.png" alt="edit icon">
+									</a>
+								</h3>
+							</div>
+						</li>
+						<li>
+							<div class="info-list-title">
+								<h3 class="title">
+									<a href="#">Fax:</a>
+								</h3>
+								<h3 class="edit-title">
+									<a href="#">
+										<img src="images/icon-edit.png" alt="edit icon">
+									</a>
+								</h3>
+							</div>
+							<div class="info-list-description">
+								<h3 class="description">
+									<a href="#">Your fax...</a>
+								</h3>
+								<h3 class="edit-title">
+									<a href="#">
+										<img src="images/icon-edit.png" alt="edit icon">
+									</a>
+								</h3>
+							</div>
+						</li>
+						<li>
+							<div class="info-list-title">
+								<h3 class="title">
+									<a href="#">E-mail:</a>
+								</h3>
+								<h3 class="edit-title">
+									<a href="#">
+										<img src="images/icon-edit.png" alt="edit icon">
+									</a>
+								</h3>
+							</div>
+							<div class="info-list-description">
+								<h3 class="description">
+									<a href="#">Your e-mail...</a>
+								</h3>
+								<h3 class="edit-title">
+									<a href="#">
+										<img src="images/icon-edit.png" alt="edit icon">
+									</a>
+								</h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="map-block-desctop">
+					<div class="wrapper">
+						<h3 class="edit-direction">
+							<a href="#">
+								<span>Edit direction</span>
+								<img src="images/get-directions-button.png" alt="get-directions-button">
+							</a>
+						</h3>
+					</div>
+					<a class="map-overflow" onclick="$(this).css('display','none')"></a>
+				</div>
+				<div class="social-links-block">
+					<div class="social-links-title">
+						<h3 class="title">
+							<a href="#">social links:</a>
+						</h3>
+						<h3 class="edit-title">
+							<a href="#">
+								<img src="images/icon-edit.png" alt="edit icon">
+							</a>
+						</h3>
+					</div>
+					<ul class="social-list" onclick="$('.map-overflow').removeAttr('style')">
+						<li>
+							<a class="social-icon" href="#">
+								<img class="mobile" src="images/facebook.png" alt="icon">
+							</a>
+							<h3 class="edit-icon">
+								<a href="#">
+									<img src="images/icon-edit.png" alt="edit icon">
+								</a>
+							</h3>
+						</li>
+						<li>
+							<a class="social-icon" href="#">
+								<img class="mobile" src="images/google-plus-symbol.png" alt="icon">
+							</a>
+							<h3 class="edit-icon">
+								<a href="#">
+									<img src="images/icon-edit.png" alt="edit icon">
+								</a>
+							</h3>
+						</li>
+						<li>
+							<a class="social-icon" href="#">
+								<img class="mobile" src="images/twitter.png" alt="icon">
+							</a>
+							<h3 class="edit-icon">
+								<a href="#">
+									<img src="images/icon-edit.png" alt="edit icon">
+								</a>
+							</h3>
+						</li>
+						<li>
+							<a class="social-icon" href="#">
+								<img class="mobile" src="images/instagram.png" alt="icon">
+							</a>
+							<h3 class="edit-icon">
+								<a href="#">
+									<img src="images/icon-edit.png" alt="edit icon">
+								</a>
+							</h3>
+						</li>
+						<li>
+							<a class="social-icon" href="#">
+								<img class="mobile" src="images/pinterest.png" alt="icon">
+							</a>
+							<h3 class="edit-icon">
+								<a href="#">
+									<img src="images/icon-edit.png" alt="edit icon">
+								</a>
+							</h3>
+						</li>
+						<li>
+							<a class="social-icon" href="#">
+								<img class="mobile" src="images/youtube-play-button-outlined-social-symbol.png" alt="icon">
+							</a>
+							<h3 class="edit-icon">
+								<a href="#">
+									<img src="images/icon-edit.png" alt="edit icon">
+								</a>
+							</h3>
+						</li>
+					</ul>
+					<div class="social-control-btn">
+						<a class="quote-request-btn" href="#">E-mail for quote request</a>
+						<a class="list-request-btn" href="#">List of request</a>
+					</div>
 				</div>
 			</div>
-			<div class="contact-info">
-				<div class="name-company-title">
-					<h3 class="title">
-						<a href="#">name of company</a>
-					</h3>
-					<h3 class="edit-title">
-						<a href="#">
-							Edit
-							<span class="fa fa-pencil" aria-hidden="true"></span>
-						</a>
-					</h3>
-				</div>
-				<ul class="info-list">
-					<li>
-						<div class="info-list-title">
-							<h3 class="title">
-								<a href="#">Address</a>
-							</h3>
-							<h3 class="edit-title">
-								<a href="#">
-									Edit
-									<span class="fa fa-pencil" aria-hidden="true"></span>
-								</a>
-							</h3>
-						</div>
-						<div class="info-list-description">
-							<h3 class="description">
-								<a href="#">Your address...</a>
-							</h3>
-							<h3 class="edit-title">
-								<a href="#">
-									Edit text
-									<span class="fa fa-pencil" aria-hidden="true"></span>
-								</a>
-							</h3>
-						</div>
-					</li>
-					<li>
-						<div class="info-list-title" onclick="$('.map-overflow').removeAttr('style')">
-							<h3 class="title">
-								<a href="#">phone</a>
-							</h3>
-							<h3 class="edit-title">
-								<a href="#">
-									Edit
-									<span class="fa fa-pencil" aria-hidden="true"></span>
-								</a>
-							</h3>
-						</div>
-						<div class="info-list-description">
-							<h3 class="description">
-								<a href="#">Your phone...</a>
-							</h3>
-							<h3 class="edit-title">
-								<a href="#">
-									Edit text
-									<span class="fa fa-pencil" aria-hidden="true"></span>
-								</a>
-							</h3>
-						</div>
-					</li>
-					<li>
-						<div class="info-list-title">
-							<h3 class="title">
-								<a href="#">fax</a>
-							</h3>
-							<h3 class="edit-title">
-								<a href="#">
-									Edit
-									<span class="fa fa-pencil" aria-hidden="true"></span>
-								</a>
-							</h3>
-						</div>
-						<div class="info-list-description">
-							<h3 class="description">
-								<a href="#">Your fax...</a>
-							</h3>
-							<h3 class="edit-title">
-								<a href="#">
-									Edit text
-									<span class="fa fa-pencil" aria-hidden="true"></span>
-								</a>
-							</h3>
-						</div>
-					</li>
-					<li>
-						<div class="info-list-title">
-							<h3 class="title">
-								<a href="#">E-mail</a>
-							</h3>
-							<h3 class="edit-title">
-								<a href="#">
-									Edit
-									<span class="fa fa-pencil" aria-hidden="true"></span>
-								</a>
-							</h3>
-						</div>
-						<div class="info-list-description">
-							<h3 class="description">
-								<a href="#">Your e-mail...</a>
-							</h3>
-							<h3 class="edit-title">
-								<a href="#">
-									Edit text
-									<span class="fa fa-pencil" aria-hidden="true"></span>
-								</a>
-							</h3>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="map-block-desctop">
+			<div class="map-block-mobile">
 				<div class="wrapper">
 					<h3 class="edit-direction">
 						<a href="#">
@@ -232,108 +409,6 @@
 				</div>
 				<a class="map-overflow" onclick="$(this).css('display','none')"></a>
 			</div>
-			<div class="social-links-block">
-				<div class="social-links-title">
-					<h3 class="title">
-						<a href="#">social links</a>
-					</h3>
-					<h3 class="edit-title">
-						<a href="#">
-							Edit
-							<span class="fa fa-pencil" aria-hidden="true"></span>
-						</a>
-					</h3>
-				</div>
-				<ul class="social-list" onclick="$('.map-overflow').removeAttr('style')">
-					<li>
-						<a class="social-icon" href="#">
-							<img class="mobile" src="images/facebook.png" alt="icon">
-							<img class="desctop" src="images/facebook (1).png" alt="icon">
-						</a>
-						<h3 class="edit-icon">
-							<a href="#">
-								Edit
-								<span class="fa fa-pencil" aria-hidden="true"></span>
-							</a>
-						</h3>
-					</li>
-					<li>
-						<a class="social-icon" href="#">
-							<img class="mobile" src="images/google-plus-symbol.png" alt="icon">
-							<img class="desctop" src="images/google-plus-symbol (1).png" alt="icon">
-						</a>
-						<h3 class="edit-icon">
-							<a href="#">
-								Edit
-								<span class="fa fa-pencil" aria-hidden="true"></span>
-							</a>
-						</h3>
-					</li>
-					<li>
-						<a class="social-icon" href="#">
-							<img class="mobile" src="images/twitter.png" alt="icon">
-							<img class="desctop" src="images/twitter (1).png" alt="icon">
-						</a>
-						<h3 class="edit-icon">
-							<a href="#">
-								Edit
-								<span class="fa fa-pencil" aria-hidden="true"></span>
-							</a>
-						</h3>
-					</li>
-					<li>
-						<a class="social-icon" href="#">
-							<img class="mobile" src="images/instagram.png" alt="icon">
-							<img class="desctop" src="images/instagram (1).png" alt="icon">
-						</a>
-						<h3 class="edit-icon">
-							<a href="#">
-								Edit
-								<span class="fa fa-pencil" aria-hidden="true"></span>
-							</a>
-						</h3>
-					</li>
-					<li>
-						<a class="social-icon" href="#">
-							<img class="mobile" src="images/pinterest.png" alt="icon">
-							<img class="desctop" src="images/pinterest (1).png" alt="icon">
-						</a>
-						<h3 class="edit-icon">
-							<a href="#">
-								Edit
-								<span class="fa fa-pencil" aria-hidden="true"></span>
-							</a>
-						</h3>
-					</li>
-					<li>
-						<a class="social-icon" href="#">
-							<img class="mobile" src="images/youtube-play-button-outlined-social-symbol.png" alt="icon">
-							<img class="desctop" src="images/youtube-play-button-outlined-social-symbol (1).png" alt="icon">
-						</a>
-						<h3 class="edit-icon">
-							<a href="#">
-								Edit
-								<span class="fa fa-pencil" aria-hidden="true"></span>
-							</a>
-						</h3>
-					</li>
-				</ul>
-				<div class="social-control-btn">
-					<a class="quote-request-btn" href="#">E-mail for quote request</a>
-					<a class="list-request-btn" href="#">List of request</a>
-				</div>
-			</div>
-		</div>
-		<div class="map-block-mobile">
-			<div class="wrapper">
-				<h3 class="edit-direction">
-					<a href="#">
-						<span>Edit direction</span>
-						<img src="images/get-directions-button.png" alt="get-directions-button">
-					</a>
-				</h3>
-			</div>
-			<a class="map-overflow" onclick="$(this).css('display','none')"></a>
 		</div>
 		<div class="for-seo-toolbar" onclick="$('.map-overflow').removeAttr('style')">
 			<div class="wrapper">
@@ -349,9 +424,6 @@
 						<li>
 							<a href="#">Meta Tag (Key Words)</a>
 						</li>
-						<li>
-							<a href="#">H1</a>
-						</li>
 					</ul>
 				</div>
 			</div>
@@ -359,71 +431,13 @@
 		<div class="site-control-btn">
 			<div class="wrapper">
 				<a class="to-website-btn" href="#">Go to the website</a>
-				<a class="back-btn" href="javascript:history.back()">Back</a>
-			</div>
-		</div>
-		<div class="wrapper">
-			<div class="main-menu">
-				<ul class="list-menu">
-					<li>
-						<a href="home.html">Home</a>
-					</li>
-					<li>
-						<a href="about.html">About us</a>
-					</li>
-					<li>
-						<a href="services.html">services</a>
-					</li>
-					<li>
-						<a href="blog.html">blog</a>
-					</li>
-					<li>
-						<a href="contact.html">contact us</a>
-					</li>
-				</ul>
-			</div>
-			<div id="dock-container">
-				<div id="dock">
-					<ul class="osx-dock">
-						<li>
-							<span>Home</span>
-							<a href="home.html">
-								<img src="images/home.png" alt="home item">
-							</a>
-						</li>
-						<li>
-							<span>About</span>
-							<a href="about.html">
-								<img src="images/about-us.png" alt="about ua item">
-							</a>
-						</li>
-						<li>
-							<span>Services</span>
-							<a href="services.html">
-								<img src="images/services.png" alt="services item">
-							</a>
-						</li>
-						<li>
-							<span>Blog</span>
-							<a href="blog.html">
-								<img src="images/blog.png" alt="blog item">
-							</a>
-						</li>
-						<li>
-							<span>Contact us</span>
-							<a href="contact.html">
-								<img src="images/contact-us.png" alt="contact-us item">
-							</a>
-						</li>
-					</ul>
-				</div>
 			</div>
 		</div>
 	</section>
 	<footer class="site-container footer-inside"></footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/swiper.jquery.min.js"></script>
-	<script src="js/mack_os_dock_live_menu.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

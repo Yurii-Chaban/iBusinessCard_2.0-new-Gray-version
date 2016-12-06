@@ -13,12 +13,26 @@
 	<!-- Include styles -->
 	<link rel="stylesheet" href="stylesheets/font-awesome.css">
 	<!--- Component CSS -->
+	<link rel="stylesheet" href="stylesheets/slick.css">
+	<link rel="stylesheet" href="stylesheets/slick-theme.css">
 	<link rel="stylesheet" href="stylesheets/swiper.min.css">
-	<link rel="stylesheet" href="stylesheets/mack_os_dock_menu.css">
 	<link rel="stylesheet" href="stylesheets/main_styles.css">
 </head>
 <body class="body-background">
 	<header class="inside-page">
+		<div class="header-logo-block">
+			<div class="header-bg">
+				<h2 class="company-logo">
+					<a href="index.html">Global Vision</a>
+				</h2>
+				<ul class="color-list">
+					<li class="color-1"></li>
+					<li class="color-2"></li>
+					<li class="color-3"></li>
+					<li class="color-4"></li>
+				</ul>
+			</div>
+		</div>
 		<div class="header-top">
 			<div class="wrapper">
 				<!-- mobile menu -->
@@ -31,16 +45,47 @@
 					</label>
 					<ul class="hidden-menu">
 						<li>
-							<a href="home.html">Home</a>
+							<a href="index.html">Home</a>
 						</li>
 						<li>
 							<a href="about.html">about us</a>
 						</li>
-						<li>
+						<li class="sub-menu services-submenu">
 							<a href="services.html">services</a>
+							<div class="sub-menu-block">
+								<ul class="submenu-list">
+									<li>
+										<a href="services_more.html">Service #1</a>
+									</li>
+									<li>
+										<a href="services_more.html">Service #2</a>
+									</li>
+									<li>
+										<a href="services_more.html">Service #3</a>
+									</li>
+									<li>
+										<a href="services_more.html">Service #4</a>
+									</li>
+								</ul>
+								<a id="new-serv-btn" href="#">+ Add New Service</a>
+							</div>
 						</li>
-						<li>
-							<a href="blog.html">blog</a>
+						<li class="sub-menu blog-submenu">
+							<a href="#">blog</a>
+							<div class="sub-menu-block">
+								<a id="new-article-btn" href="#">+ Add New Article</a>
+								<ul class="submenu-list">
+									<li>
+										<a href="blog-more.html">Name of the article # 3</a>
+									</li>
+									<li>
+										<a href="blog-more.html">Name of the article # 2</a>
+									</li>
+									<li>
+										<a href="blog-more.html">Name of the article # 1</a>
+									</li>
+								</ul>
+							</div>
 						</li>
 						<li>
 							<a href="contact.html">contact us</a>
@@ -51,11 +96,11 @@
 				<div class="settings-block">
 					<a id="settings" href="#">
 						<span class="fa fa-cog" aria-hidden="true"></span>
-						<span class="position-word">Settings</span>
+						<!-- <span class="position-word">Settings</span> -->
 					</a>
 					<a id="log-out" href="#">
 						<span class="fa fa-sign-out" aria-hidden="true"></span>
-						<span class="position-word">Sign&nbsp;out</span>
+						<!-- <span class="position-word">Sign&nbsp;out</span> -->
 					</a>
 				</div>
 				<div id="sett" class="open-settings" style="display: none;">
@@ -76,12 +121,64 @@
 				</div>
 				<div class="logo-block">
 					<h1 class="logo-title">
-						<a href="main.html">iBusinessCard 2.0</a>
+						<a href="index.html">iBusinessCard 2.0</a>
 					</h1>
 					<h2 class="logo-sign">
-						<a href="main.html">Content Management System</a>
+						<a href="index.html">Content Management System</a>
 					</h2>
 				</div>
+			</div>
+		</div>
+		<div class="header-desctop-menu">
+			<div class="wrapper">
+				<ul class="menu-list">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">about us</a>
+					</li>
+					<li class="sub-menu services-submenu">
+						<a href="services.html">services</a>
+						<div class="sub-menu-block">
+							<ul class="submenu-list">
+								<li>
+									<a href="services_more.html">Service #1</a>
+								</li>
+								<li>
+									<a href="services_more.html">Service #2</a>
+								</li>
+								<li>
+									<a href="services_more.html">Service #3</a>
+								</li>
+								<li>
+									<a href="services_more.html">Service #4</a>
+								</li>
+							</ul>
+							<a id="new-serv-btn" href="#">+ Add New Service</a>
+						</div>
+					</li>
+					<li class="sub-menu blog-submenu">
+						<a href="#">blog</a>
+						<div class="sub-menu-block">
+							<a id="new-article-btn" href="#">+ Add New Article</a>
+							<ul class="submenu-list">
+								<li>
+									<a href="blog-more.html">Name of the article # 3</a>
+								</li>
+								<li>
+									<a href="blog-more.html">Name of the article # 2</a>
+								</li>
+								<li>
+									<a href="blog-more.html">Name of the article # 1</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="contact.html">contact us</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</header>
@@ -91,228 +188,136 @@
 				<img src="images/arrow.png" alt="arrow back">
 			</a>
 			<h3 class="direction-title">
-				<a href="javascript:history.back()">services</a>
+				<a href="javascript:history.back()">Services</a>
 			</h3>
 		</div>
 	</section>
 	<section class="site-container main-page section-padding-bottom">
-		<div class="wrapper">
-			<div class="fot-page-title">
-				<div class="page-title">
-					<h2 class="title">
-						<a href="#">services</a>
-					</h2>
-					<h4 class="edit-title">
-						<a href="#">
-							Edit
-							<span class="fa fa-pencil" aria-hidden="true"></span>
-						</a>
+		<div class="services-page-desctop-bg">
+			<div class="wrapper">
+				<div class="for-phone">
+					<h4 class="phone-number">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<a href="tel:2251264455">225.126.4455</a>
 					</h4>
+					<a class="edit" href="#">
+						<img src="images/icon-edit.png" alt="edit icon">
+					</a>
 				</div>
 			</div>
-		</div>
-		<div class="content-box">
-			<div class="wrapper">
-				<aside class="left-sidebar">
+			<div class="for-services-page">
+				<div class="wrapper">
 					<ul class="services-list">
 						<li>
-							<div class="services-edit">
-								<h3 class="title">
-									<a href="#">Service name # 1</a>
-								</h3>
-								<h3 class="edit-title">
-									<a href="#">
-										Edit
-										<span class="fa fa-pencil" aria-hidden="true"></span>
-									</a>
-								</h3>
+							<div class="services-icon">
+								<img class="mobile" src="images/services-icon-mobile.png" alt="services icon mobile">
+								<img class="desctop" src="images/services-icon-desctop.png" alt="services icon mobile">
 							</div>
+							<h3 class="services-item-title">Service #1</h3>
 						</li>
 						<li>
-							<div class="services-edit">
-								<h3 class="title">
-									<a href="#">Service name # 2</a>
-								</h3>
-								<h3 class="edit-title">
-									<a href="#">
-										Edit
-										<span class="fa fa-pencil" aria-hidden="true"></span>
-									</a>
-								</h3>
+							<div class="services-icon">
+								<img class="mobile" src="images/services-icon-mobile.png" alt="services icon mobile">
+								<img class="desctop" src="images/services-icon-desctop.png" alt="services icon mobile">
 							</div>
+							<h3 class="services-item-title">Service #2</h3>
 						</li>
 						<li>
-							<div class="services-edit">
-								<h3 class="title">
-									<a href="#">Service name # 3</a>
-								</h3>
-								<h3 class="edit-title">
-									<a href="#">
-										Edit
-										<span class="fa fa-pencil" aria-hidden="true"></span>
-									</a>
-								</h3>
+							<div class="services-icon">
+								<img class="mobile" src="images/services-icon-mobile.png" alt="services icon mobile">
+								<img class="desctop" src="images/services-icon-desctop.png" alt="services icon mobile">
 							</div>
+							<h3 class="services-item-title">Service #3</h3>
 						</li>
 						<li>
-							<div class="services-edit">
-								<h3 class="title">
-									<a href="#">Service name # 4</a>
-								</h3>
-								<h3 class="edit-title">
-									<a href="#">
-										Edit
-										<span class="fa fa-pencil" aria-hidden="true"></span>
-									</a>
-								</h3>
+							<div class="services-icon">
+								<img class="mobile" src="images/services-icon-mobile.png" alt="services icon mobile">
+								<img class="desctop" src="images/services-icon-desctop.png" alt="services icon mobile">
 							</div>
+							<h3 class="services-item-title">Service #4</h3>
+						</li>
+						<li>
+							<div class="services-icon">
+								<img class="mobile" src="images/services-icon-mobile.png" alt="services icon mobile">
+								<img class="desctop" src="images/services-icon-desctop.png" alt="services icon mobile">
+							</div>
+							<h3 class="services-item-title">Service #5</h3>
+						</li>
+						<li>
+							<div class="services-icon">
+								<img class="mobile" src="images/services-icon-mobile.png" alt="services icon mobile">
+								<img class="desctop" src="images/services-icon-desctop.png" alt="services icon mobile">
+							</div>
+							<h3 class="services-item-title">Service #6</h3>
+						</li>
+						<li>
+							<div class="services-icon">
+								<img class="mobile" src="images/services-icon-mobile.png" alt="services icon mobile">
+								<img class="desctop" src="images/services-icon-desctop.png" alt="services icon mobile">
+							</div>
+							<h3 class="services-item-title">Service #7</h3>
+						</li>
+						<li>
+							<div class="services-icon">
+								<img class="mobile" src="images/services-icon-mobile.png" alt="services icon mobile">
+								<img class="desctop" src="images/services-icon-desctop.png" alt="services icon mobile">
+							</div>
+							<h3 class="services-item-title">Service #8</h3>
 						</li>
 					</ul>
-					<a href="#" id="add">+ Add new service</a>
-				</aside>
-				<div class="main-content">
-					<div class="for-services-photo">
-						<div class="photo-container">
-							<!-- <img src="images/bcb945bd1710250c56a476cc9dc7a80a.jpg" alt="about photo"> -->
-							<h4 class="edit-title">
-								<a href="#">
-									<span class="breack">Edit page</span> of service # 1
-									<span class="fa fa-pencil" aria-hidden="true"></span>
-								</a>
-							</h4>
-						</div>
-						<div class="photo-container">
-							<!-- <img src="images/bcb945bd1710250c56a476cc9dc7a80a.jpg" alt="about photo"> -->
-							<h4 class="edit-title">
-								<a href="#">
-									<span class="breack">Edit page</span> of service # 2
-									<span class="fa fa-pencil" aria-hidden="true"></span>
-								</a>
-							</h4>
-						</div>
-						<div class="photo-container">
-							<!-- <img src="images/bcb945bd1710250c56a476cc9dc7a80a.jpg" alt="about photo"> -->
-							<h4 class="edit-title">
-								<a href="#">
-									<span class="breack">Edit page</span> of service # 3
-									<span class="fa fa-pencil" aria-hidden="true"></span>
-								</a>
-							</h4>
-						</div>
-						<div class="photo-container">
-							<!-- <img src="images/bcb945bd1710250c56a476cc9dc7a80a.jpg" alt="about photo"> -->
-							<h4 class="edit-title">
-								<a href="#">
-									<span class="breack">Edit page</span> of service # 4
-									<span class="fa fa-pencil" aria-hidden="true"></span>
-								</a>
-							</h4>
-						</div>
-					</div>
-					<div class="services-area-description">
-						<h3 class="description">
-							<a href="#"><span>Description</span> of the section...</a>
+				</div>
+			</div>
+		</div>
+		<div class="preffoter-text">
+			<div class="preffoter-description">
+				<div class="wrapper">
+					<h3 class="description">
+						<a class="mobile" href="#">Replace this text ...</a>
+						<a class="desctop" href="#">Replace this text with updates on the building project. Replace this text with updates on the building 
+							project. Replace this text with updates on the building project. Replace this text with updates on the building project. 
+							Replace this text with updates on the building project. Replace this text with updates on the building project. 
+							Replace this text with updates on the building project. Replace this text with updates on the building project. 
+							Replace this text with updates on the building project.</a>
 						</h3>
 						<h3 class="edit-title">
-							<a href="#">
-								Edit text
-								<span class="fa fa-pencil" aria-hidden="true"></span>
+							<a class="edit" href="#">
+								<img src="images/icon-edit.png" alt="edit icon">
 							</a>
 						</h3>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="for-seo-toolbar">
-			<div class="wrapper">
-				<div class="box-border">
-					<h2 class="seo-toolbar-title">SEO Toolbar</h2>
-					<ul class="seo-toolbar-list">
-						<li>
-							<a href="#">Meta Tag (Title)</a>
-						</li>
-						<li>
-							<a href="#">Meta Tag (Description)</a>
-						</li>
-						<li>
-							<a href="#">Meta Tag (Key Words)</a>
-						</li>
-						<li>
-							<a href="#">H1</a>
-						</li>
-					</ul>
+			<div class="for-seo-toolbar">
+				<div class="wrapper">
+					<div class="box-border">
+						<h2 class="seo-toolbar-title">SEO Toolbar</h2>
+						<ul class="seo-toolbar-list">
+							<li>
+								<a href="#">Meta Tag (Title)</a>
+							</li>
+							<li>
+								<a href="#">Meta Tag (Description)</a>
+							</li>
+							<li>
+								<a href="#">Meta Tag (Key Words)</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="site-control-btn">
-			<div class="wrapper">
-				<a class="to-website-btn" href="#">Go to the website</a>
-				<a class="back-btn" href="javascript:history.back()">Back</a>
-			</div>
-		</div>
-		<div class="wrapper">
-			<div class="main-menu">
-				<ul class="list-menu">
-					<li>
-						<a href="home.html">Home</a>
-					</li>
-					<li>
-						<a href="about.html">about us</a>
-					</li>
-					<li>
-						<a href="services.html">services</a>
-					</li>
-					<li>
-						<a href="blog.html">blog</a>
-					</li>
-					<li>
-						<a href="contact.html">contact us</a>
-					</li>
-				</ul>
-			</div>
-			<div id="dock-container">
-				<div id="dock">
-					<ul class="osx-dock">
-						<li>
-							<span>Home</span>
-							<a href="home.html">
-								<img src="images/home.png" alt="home item">
-							</a>
-						</li>
-						<li>
-							<span>About</span>
-							<a href="about.html">
-								<img src="images/about-us.png" alt="about item">
-							</a>
-						</li>
-						<li>
-							<span>Services</span>
-							<a href="services.html">
-								<img src="images/services.png" alt="services item">
-							</a>
-						</li>
-						<li>
-							<span>Blog</span>
-							<a href="blog.html">
-								<img src="images/blog.png" alt="blog item">
-							</a>
-						</li>
-						<li>
-							<span>Contact us</span>
-							<a href="contact.html">
-								<img src="images/contact-us.png" alt="contact-us item">
-							</a>
-						</li>
-					</ul>
+			<div class="site-control-btn">
+				<div class="wrapper">
+					<a class="to-website-btn" href="#">
+						<span>Go to the website</span>
+					</a>
 				</div>
 			</div>
-		</div>
-	</section>
-	<footer class="site-container footer-inside"></footer>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/swiper.jquery.min.js"></script>
-	<script src="js/mack_os_dock_live_menu.js"></script>
-	<script src="js/swiper.min.js"></script>
-	<script src="js/main.js"></script>
-</body>
-</html>
+		</section>
+		<footer class="site-container footer-inside"></footer>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/swiper.jquery.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+	</html>
