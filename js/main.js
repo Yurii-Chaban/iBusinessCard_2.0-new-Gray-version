@@ -1,4 +1,4 @@
-// for main menu
+// for main menu mobile
 $(function () {
     $('.hidden-menu li a').each(function () {
         var location = window.location.pathname;
@@ -9,16 +9,14 @@ $(function () {
         }
     });
 });
-// for osx menu
+// for main menu desctop
 $(function () {
-    $('ul.osx-dock li a').each(function () {
+    $('.header-desctop-menu .menu-list li > a').each(function () {
         var location = window.location.pathname;
         var link = this.pathname;
         var result = location.match(link);
         if(result && link.length > 0) {
-            $(this).parent().addClass('osx-menu-active');
-            $(this).parent().prev().addClass("nearby");
-            $(this).parent().next().addClass("nearby");
+            $(this).addClass('desctop-item-active');
         }
     });
 });

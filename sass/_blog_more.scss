@@ -1,28 +1,31 @@
 .main-page {
 
-	.fot-page-title {
-		@include border-box;
-		.page-title {
-			@include border-box;
-			overflow: hidden;
-			width: 100%;
-			padding: 15px 10px;
-			background-color: #aeaeae;
+	.blog-more-desctop-bg {
 
-			.title {
-				float: left;
-				max-width: 90%;
-				a {
-					color: black;
-					font: 400 21px / 30px $Swiss721BT;
+		.fot-page-title {
+			@include border-box;
+			.page-title {
+				@include border-box;
+				overflow: hidden;
+				width: 100%;
+				padding: 15px 10px;
+				background-color: #aeaeae;
+
+				.title {
+					float: left;
+					max-width: 90%;
+					a {
+						color: black;
+						font: 400 21px / 30px $Swiss721BT;
+					}
 				}
-			}
-			.edit-title {
-				@include edit;
-				margin: 4px 0 0;
-				overflow: inherit;
-				clear: inherit;
-				float: right;
+				.edit-title {
+					@include edit;
+					margin: 4px 0 0;
+					overflow: inherit;
+					clear: inherit;
+					float: right;
+				}
 			}
 		}
 	}

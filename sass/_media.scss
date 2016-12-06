@@ -511,6 +511,13 @@
 	/*-------------------------------------------------------------------------------*/
 	// FOR CONTACT US PAGE
 	.main-page {
+		.contact-desctop-bg {
+			.fot-page-title {
+				.page-title {
+					padding: 8px 10px 8px 0;
+				}
+			}
+		}
 		.contact-info {
 			max-width: 380px;
 			width: 35%;
@@ -522,35 +529,19 @@
 				margin: 0 auto 18px;
 				padding: 10px 0;
 
-				.title {
-					a {
-						color: #61abec;
-					}
-				}
 				.edit-title {
 					float: left;
 					clear: inherit;
 					margin: 7px 0 0 5px;
-					a {
-						color: #61abec;
-					}
 				}
 			}
 			.info-list-title {
 				background: inherit;
 				padding: 17px 12px 17px 0;
-				.title {
-					a {
-						color: #61abec;
-					}
-				}
 				.edit-title {
 					float: left;
 					clear: inherit;
 					margin: 7px 0 0 10px;
-					a {
-						color: #61abec;
-					}
 				}
 			}
 			.info-list-description {
@@ -573,18 +564,10 @@
 			.social-links-title {
 				background: inherit;
 				padding: 17px 12px 17px 0;
-				.title {
-					a {
-						color: #61abec;
-					}
-				}
 				.edit-title {
 					clear: inherit;
 					float: left;
 					margin: 7px 0 0 10px;
-					a {
-						color: #61abec;
-					}
 				}
 			}
 
@@ -611,20 +594,11 @@
 					}
 					.social-icon {
 						float: left;
-						.mobile {
-							display: none;
-						}
-						.desctop {
-							display: block;
-						}
 					}
 					.edit-icon {
 						clear: inherit;
 						float: inherit;
 						margin: 13px 0 0 0;
-						a {
-							color: #61abec;
-						}
 					}
 				}
 			}
@@ -672,6 +646,12 @@
 				}
 				.next-btn {
 					right: 17px;
+				}
+
+				.slick-slide {
+					.edit-title {
+							top: 13px;
+					}
 				}
 			}
 		}
@@ -814,6 +794,9 @@
 						text-transform: capitalize;
 						@include transition;
 					}
+					.desctop-item-active {
+						color: #000;
+					}
 
 					&:hover {
 						a {
@@ -841,7 +824,7 @@
 						display: none;
 						position: absolute;
 						left: 0;
-						top: 33px;
+						top: 32px;
 						width: 190px;
 						background-color: #fff;
 						box-shadow: -3.5px 3.5px 5px rgba(0, 0, 0, 0.14);
@@ -1381,41 +1364,45 @@
 			overflow: hidden;
 		}
 
-		.blog-more-desctop-bg {
-			.fot-page-title {
-				margin: 52px 0 0 35px !important;
-				min-width: 40%;
 
-				.page-title {
-
-					.title {
-						a {
-							font-size: 30px;
-						}
-					}
-					.edit-title {
-						margin: 4px 0 0 8px;
-					}
-				}
-			}
-			.for-post-date {
-				margin: -11px 0 0 35px;
-				letter-spacing: 1px;
-
-				.post-date {
-					padding: 0 10px 15px 0;
-					.date {
-						a {
-							line-height: 23px;
-						}
-					}
-					.edit-title {
-						margin: 2px 0 0 3px;
-					}
-				}
-			}
-		}
 		.main-page {
+			.blog-more-desctop-bg {
+				.fot-page-title {
+					margin: 52px 0 0 35px !important;
+					min-width: 40%;
+
+					.page-title {
+						background: none;
+						padding: 15px 10px 15px 0;
+						.title {
+							a {
+								font-size: 30px;
+							}
+						}
+						.edit-title {
+							float: left;
+							margin: 4px 0 0 8px;
+						}
+					}
+				}
+				.for-post-date {
+					margin: -11px 0 0 35px;
+					letter-spacing: 1px;
+
+					.post-date {
+						padding: 0 10px 15px 0;
+						.date {
+							a {
+								line-height: 23px;
+							}
+						}
+						.edit-title {
+							margin: 2px 0 0 3px;
+						}
+					}
+				}
+			}
+
 			.fot-page-title {
 				margin: 73px 0 0 39px;
 
@@ -1441,12 +1428,12 @@
 				}
 			}
 			.serv-more-slider {
-				margin: 0 auto 4px;
+				margin: 36px auto 4px;
 				padding: 0 0 33px;
 				border-bottom: 3px solid #aeaeae;
 			}
 			.for-about{
-				margin: 0 auto 20px;
+				margin: 0 auto 8px;
 				padding: 0 15px;
 				clear: both;
 
@@ -1494,12 +1481,17 @@
 					}
 				}
 			}
+
+			.for-about-slider {
+				margin: 37px auto 38px;
+			}
+
 			.for-services-more-icon {
 				float: left;
 				margin: 57px 18px 0 30px;
 			}
 			.for-serv-more {
-				margin: 0 auto 37px;
+				margin: 0 auto 8px;
 				padding: 0 15px 21px;
 				clear: both;
 
@@ -1549,8 +1541,8 @@
 			}
 
 			.for-blog-more {
-				margin: 0 auto 37px;
-				padding: 0 15px 21px;
+				margin: 0 auto 21px;
+				padding: 0 15px 0;
 				clear: both;
 
 				.wrapper {
@@ -1598,7 +1590,7 @@
 				}
 			}
 			.blog-more-slider {
-				margin: 0 auto 4px;
+				margin: 36px auto 4px;
 				padding: 0 0 33px;
 				border-bottom: 3px solid #aeaeae;
 			}
@@ -1637,6 +1629,96 @@
 						.services-item-title {
 							font-size: 22px;
 							letter-spacing: 0.7px;
+						}
+					}
+				}
+			}
+		}
+		.main-page {
+			.contact-info {
+				width: 100%;
+				margin-left: 33px;
+				.info-list-title {
+					padding: 17px 12px 9px 0;
+					margin: 7px auto 0;
+
+					.edit-title {
+						margin: 5px 0 0 2px;
+					}
+				}
+				.info-list-description {
+					min-height: 67px;
+					margin: 0 auto;
+					padding: 5px 10px 5px 9px;
+
+					.edit-title {
+						margin: -14px -6px 0 0;
+					}
+
+					.description {
+						font-size: 18px;
+						line-height: 20px;
+					}
+				}
+			}
+			.social-links-block {
+				.social-links-title {
+					margin: 0 0 0 33px;
+				}
+
+				.social-list {
+					margin: -6px 0 0 30px;
+
+					li {
+						min-width: auto;
+						margin: 0;
+
+						&:nth-child(odd) {
+							margin: 0;
+						}
+					}
+				}
+			}
+
+			.contact-desctop-bg {
+				padding-bottom: 25px;
+				background: url("../images/contact-desctop-bg.jpg") no-repeat;
+				background-position: center;
+				background-size: cover;
+				.fot-page-title {
+					margin: 59px 0 0 36px;
+				}
+			}
+			.social-links-block {
+				.social-control-btn {
+					margin-left: 34px;
+					.quote-request-btn,
+					.list-request-btn {
+						line-height: 34px;
+					}
+
+					.quote-request-btn {
+						width: 238px;
+					}
+					.list-request-btn {
+						width: 166px;
+						margin-left: 22px;
+					}
+				}
+			}
+
+			.map-block-desctop {
+				max-width: 530px;
+				max-height: 495px;
+				height: 495px;
+				margin: 26px 21px 0 0;
+
+				.edit-direction {
+					top: 9px;
+					right: 13px;
+					a {
+						span {
+							margin: 5px 11px 0 0;
 						}
 					}
 				}

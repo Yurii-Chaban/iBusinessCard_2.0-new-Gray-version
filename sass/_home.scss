@@ -96,8 +96,8 @@
         background: url("../images/next-mobile.png") no-repeat;
     }
     .swiper-button-prev {
-     background: url("../images/prev-mobile.png") no-repeat;
- }
+       background: url("../images/prev-mobile.png") no-repeat;
+   }
 }
 .swiper-container-horizontal {
     &>.swiper-pagination-bullets {
@@ -377,8 +377,8 @@
 
 .preffoter-text {
     max-width: 90%;
-     margin: 0 auto;
-     clear: both;
+    margin: 0 auto;
+    clear: both;
     .preffoter-description {
         height: auto;
         margin: 21px auto 0;
@@ -461,8 +461,12 @@
     text-align: center;
     color: white;
     font: 400 18px / 30px $Swiss721BT;
-    background-color: #000;
+    background-color: #b0b0b0;
     @include transition;
+
+    &:hover {
+        background-color: #000;
+    }
 
 }
 .to-website-btn {
