@@ -1,121 +1,58 @@
 .main-page {
-    .content-box {
-        .left-sidebar {
-            .services-list {
-                margin: 20px auto;
-                @include border-box;
-                li {
-                    margin: 10px auto;
 
-                    .services-edit {
-                        width: 100%;
-                        overflow: hidden;
-                        padding: 17px 12px;
-                        @include border-box;
-                        background-color: #4ec4fc;
 
-                        .title {
-                            float: left;
-                            max-width: 69%;
-                            color: white;
-                            font: 400 22px / 29px $OpenSans;
+    .for-services-page {
+        margin: 20px auto;
+        padding: 0 15px;
 
-                            a {
-                                color: #fff;
-                            }
-                        }
-
-                        .edit-title {
-                            @include edit;
-                            overflow: inherit;
-                            clear: inherit;
-                            float: right;
-                            margin: 7px 0 0;
-                        }
-                    }
-                }
-            }
-            #add {
-                display: block;
-                width: 100%;
-                overflow: hidden;
-                padding: 17px 12px;
-                @include border-box;
-                color: white;text-align: center;
-                font: 600 18px / 29px $OpenSans;
-                background-color: #4ec4fc;
-            }
+        .wrapper {
+            padding: 0;
         }
-    }
-    .main-content {
-        .for-services-photo {
-            .photo-container {
-                width: 100%;
-                height: 96px;
-                position: relative;
-                margin: 20px auto;
-                overflow: hidden;
-                background: #d5dde1 url(../images/photo-icon.png) no-repeat;
-                background-position: 10% center;
 
-                .edit-title {
-                    @include edit;
-                    margin: 0;
-                    position: absolute;
-                    top: 50%;
-                    right: 12px;
-                    transform: translateY(-50%);
-
-                    a {
-                        color: #009af0;
-                        text-align: left;
-
-                        .breack {
-                            display: block;
-                        }
-                    }
-                }
-
-                img {
-                    max-width: 100%;
-                    height: auto;
-                    max-height: 100%;
-                }
-            }
-        }
-        .services-area-description {
+        .services-list {
             @include border-box;
-            overflow: hidden;
-            position: relative;
-            width: 100%;
-            margin: 21px auto 0;
-            padding: 20px 10px;
-            border: 2px solid #56bff8;
-            .description {
-                float: left;
-                color: #7d7d7d;
-                font: 400 18px / 22px $HelveticaNeueCyr;
+            margin: 0 auto;
+            text-align: center;
 
-                a {
-                    color: #7d7d7d;
+            li {
+                display: inline-block;
+                overflow: hidden;
+                margin: 17px 5px;
 
-                    span {
-                        display: block;
+                &:nth-child(odd) {
+                    float: left;
+                    clear: left;
+                }
+
+                &:nth-child(even) {
+                    float: right;
+                    clear: right;
+                }
+
+                .services-icon {
+                    width: 108px;
+                    height: 88px;
+                    margin: 0 auto 16px;
+                    overflow: hidden;
+
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    .desctop {
+                        display: none;
                     }
                 }
-            }
 
-            .edit-title {
-                @include edit;
-                margin: 0;
-                position: absolute;
-                top: 50%;
-                right: 12px;
-                transform: translateY(-50%);
-                a {
-                    color: #009af0;
+                .services-item-title {
+                    color: black;
+                    font: 400 18px / 24px $OpenSans;
                 }
             }
+        }
+
+        .services-page-border {
+            position: relative;
         }
     }
 }
