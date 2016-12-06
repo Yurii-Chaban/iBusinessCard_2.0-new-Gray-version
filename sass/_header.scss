@@ -49,6 +49,13 @@
 				background: #fff;
 			}
 		}
+
+		.active {
+			a {
+				color: #000;
+			}
+		}
+
 		.sub-menu {
 			position: relative;
 
@@ -104,6 +111,13 @@
 							a {
 								color: #fff;
 							}
+						}
+					}
+					.submenu-mobile-item-active {
+						background-color: #111112;
+
+						a {
+							color: #fff;
 						}
 					}
 				}

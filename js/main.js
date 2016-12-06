@@ -20,6 +20,30 @@ $(function () {
         }
     });
 });
+// for submenu mobile
+$(function () {
+    $('.dropdovn-menu-mobile .hidden-menu .sub-menu a').each(function () {
+        var location = window.location.pathname;
+        var link = this.pathname;
+        var result = location.match(link);
+        if(result && link.length > 0) {
+            $(this).parents("li").addClass('submenu-mobile-item-active');
+            $(this).parents(".sub-menu").addClass("active");
+        }
+    });
+});
+// for submenu desctop
+$(function () {
+    $('.header-desctop-menu .menu-list .sub-menu a').each(function () {
+        var location = window.location.pathname;
+        var link = this.pathname;
+        var result = location.match(link);
+        if(result && link.length > 0) {
+             $(this).parents("li").addClass('submenu-desctop-item-active');
+            $(this).parents(".sub-menu").addClass("active");
+        }
+    });
+});
 
 /*---------------------*/
 /*SETTINGS CLICK*/
