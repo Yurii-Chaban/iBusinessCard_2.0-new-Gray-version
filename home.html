@@ -13,15 +13,18 @@
 	<!-- Include styles -->
 	<link rel="stylesheet" href="stylesheets/font-awesome.css">
 	<!--- Component CSS -->
+	<link rel="stylesheet" href="stylesheets/slick.css">
+	<link rel="stylesheet" href="stylesheets/slick-theme.css">
 	<link rel="stylesheet" href="stylesheets/swiper.min.css">
-	<link rel="stylesheet" href="stylesheets/mack_os_dock_menu.css">
 	<link rel="stylesheet" href="stylesheets/main_styles.css">
 </head>
 <body class="body-background">
 	<header class="inside-page">
 		<div class="header-logo-block">
 			<div class="header-bg">
-				<h2 class="company-logo">Global Vision</h2>
+				<h2 class="company-logo">
+					<a href="index.html">Global Vision</a>
+				</h2>
 				<ul class="color-list">
 					<li class="color-1"></li>
 					<li class="color-2"></li>
@@ -42,44 +45,44 @@
 					</label>
 					<ul class="hidden-menu">
 						<li>
-							<a href="home.html">Home</a>
+							<a href="index.html">Home</a>
 						</li>
 						<li>
 							<a href="about.html">about us</a>
 						</li>
-						<li class="sub-menu">
+						<li class="sub-menu services-submenu">
 							<a href="services.html">services</a>
 							<div class="sub-menu-block">
 								<ul class="submenu-list">
 									<li>
-										<a href="#">Service #1</a>
+										<a href="services_more.html">Service #1</a>
 									</li>
 									<li>
-										<a href="#">Service #2</a>
+										<a href="services_more.html">Service #2</a>
 									</li>
 									<li>
-										<a href="#">Service #3</a>
+										<a href="services_more.html">Service #3</a>
 									</li>
 									<li>
-										<a href="#">Service #4</a>
+										<a href="services_more.html">Service #4</a>
 									</li>
 								</ul>
 								<a id="new-serv-btn" href="#">+ Add New Service</a>
 							</div>
 						</li>
-						<li class="sub-menu">
-							<a href="blog.html">blog</a>
+						<li class="sub-menu blog-submenu">
+							<a>blog</a>
 							<div class="sub-menu-block">
 								<a id="new-article-btn" href="#">+ Add New Article</a>
 								<ul class="submenu-list">
 									<li>
-										<a href="#">Name of the article # 3</a>
+										<a href="blog-more.html">Name of the article # 3</a>
 									</li>
 									<li>
-										<a href="#">Name of the article # 2</a>
+										<a href="blog-more.html">Name of the article # 2</a>
 									</li>
 									<li>
-										<a href="#">Name of the article # 1</a>
+										<a href="blog-more.html">Name of the article # 1</a>
 									</li>
 								</ul>
 							</div>
@@ -93,11 +96,11 @@
 				<div class="settings-block">
 					<a id="settings" href="#">
 						<span class="fa fa-cog" aria-hidden="true"></span>
-						<span class="position-word">Settings</span>
+						<!-- <span class="position-word">Settings</span> -->
 					</a>
 					<a id="log-out" href="#">
 						<span class="fa fa-sign-out" aria-hidden="true"></span>
-						<span class="position-word">Sign&nbsp;out</span>
+						<!-- <span class="position-word">Sign&nbsp;out</span> -->
 					</a>
 				</div>
 				<div id="sett" class="open-settings" style="display: none;">
@@ -118,12 +121,64 @@
 				</div>
 				<div class="logo-block">
 					<h1 class="logo-title">
-						<a href="main.html">iBusinessCard 2.0</a>
+						<a href="index.html">iBusinessCard 2.0</a>
 					</h1>
 					<h2 class="logo-sign">
-						<a href="main.html">Content Management System</a>
+						<a href="index.html">Content Management System</a>
 					</h2>
 				</div>
+			</div>
+		</div>
+		<div class="header-desctop-menu">
+			<div class="wrapper">
+				<ul class="menu-list">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">about us</a>
+					</li>
+					<li class="sub-menu services-submenu">
+						<a href="services.html">services</a>
+						<div class="sub-menu-block">
+							<ul class="submenu-list">
+								<li>
+									<a href="services_more.html">Service #1</a>
+								</li>
+								<li>
+									<a href="services_more.html">Service #2</a>
+								</li>
+								<li>
+									<a href="services_more.html">Service #3</a>
+								</li>
+								<li>
+									<a href="services_more.html">Service #4</a>
+								</li>
+							</ul>
+							<a id="new-serv-btn" href="#">+ Add New Service</a>
+						</div>
+					</li>
+					<li class="sub-menu blog-submenu">
+						<a>blog</a>
+						<div class="sub-menu-block">
+							<a id="new-article-btn" href="#">+ Add New Article</a>
+							<ul class="submenu-list">
+								<li>
+									<a href="blog-more.html">Name of the article # 3</a>
+								</li>
+								<li>
+									<a href="blog-more.html">Name of the article # 2</a>
+								</li>
+								<li>
+									<a href="blog-more.html">Name of the article # 1</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="contact.html">contact us</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</header>
