@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Content Management System iBusinessCard 2.0</title>
+	<meta name="keywords" content="Content Management System iBusinessCard 2.0">
+
+	<link rel="shortcut icon" href="images/favicon.ico" >
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic" rel="stylesheet">
+	<!-- Include media queries -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Include styles -->
+	<link rel="stylesheet" href="stylesheets/font-awesome.css">
+	<!--- Component CSS -->
+	<link rel="stylesheet" href="stylesheets/slick.css">
+	<link rel="stylesheet" href="stylesheets/slick-theme.css">
+	<link rel="stylesheet" href="stylesheets/swiper.min.css">
+	<!-- <link rel="stylesheet" href="stylesheets/main_styles.css"> -->
+	<link rel="stylesheet" href="stylesheets/ftp-style.css">
+	<link rel="stylesheet" href="stylesheets/my.css">
+</head>
+<body class="body-background">
+	<header class="inside-page">
+		<div class="header-logo-block">
+			<div class="header-bg">
+				<h2 class="company-logo">
+					<a href="index.html">Global Vision</a>
+				</h2>
+				<ul class="color-list">
+					<li class="color-1"></li>
+					<li class="color-2"></li>
+					<li class="color-3"></li>
+					<li class="color-4"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header-top">
+			<div class="wrapper">
+				<!-- mobile menu -->
+				<div class="dropdovn-menu-mobile">
+					<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+					<label class="btn-menu" for="hmt">
+						<span class="first"></span>
+						<span class="second"></span>
+						<span class="third"></span>
+					</label>
+					<ul class="hidden-menu">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="about.html">about us</a>
+						</li>
+						<li class="sub-menu services-submenu">
+							<a href="services.html">services</a>
+							<div class="sub-menu-block">
+								<ul class="submenu-list">
+									<li>
+										<a href="services_more.html">Service #1</a>
+									</li>
+									<li>
+										<a href="services_more.html">Service #2</a>
+									</li>
+									<li>
+										<a href="services_more.html">Service #3</a>
+									</li>
+									<li>
+										<a href="services_more.html">Service #4</a>
+									</li>
+								</ul>
+								<a id="new-serv-btn" href="#">+ Add New Service</a>
+							</div>
+						</li>
+						<li class="sub-menu blog-submenu">
+							<a>blog</a>
+							<div class="sub-menu-block">
+								<a id="new-article-btn" href="#">+ Add New Article</a>
+								<ul class="submenu-list">
+									<li>
+										<a href="blog-more.html">Name of the article # 3</a>
+									</li>
+									<li>
+										<a href="blog-more.html">Name of the article # 2</a>
+									</li>
+									<li>
+										<a href="blog-more.html">Name of the article # 1</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="contact.html">contact us</a>
+						</li>
+					</ul>
+				</div>
+				<!-- end- mobile menu -->
+				<div class="settings-block">
+					<a id="settings" href="#">
+						<span class="fa fa-cog" aria-hidden="true"></span>
+						<!-- <span class="position-word">Settings</span> -->
+					</a>
+					<a id="log-out" href="#">
+						<span class="fa fa-sign-out" aria-hidden="true"></span>
+						<!-- <span class="position-word">Sign&nbsp;out</span> -->
+					</a>
+				</div>
+				<div id="sett" class="open-settings" style="display: none;">
+					<ul class="settings-list">
+						<li>
+							<a href="#">Change Password</a>
+						</li>
+						<li>
+							<a href="#">Change E-mail</a>
+						</li>
+						<li>
+							<a href="#">License</a>
+						</li>
+						<li>
+							<a href="#">Help</a>
+						</li>
+					</ul>
+				</div>
+				<div class="logo-block">
+					<h1 class="logo-title">
+						<a href="index.html">iBusinessCard 2.0</a>
+					</h1>
+					<h2 class="logo-sign">
+						<a href="index.html">Content Management System</a>
+					</h2>
+				</div>
+			</div>
+		</div>
+		<div class="header-desctop-menu">
+			<div class="wrapper">
+				<ul class="menu-list">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">about us</a>
+					</li>
+					<li class="sub-menu services-submenu">
+						<a href="services.html">services</a>
+						<div class="sub-menu-block">
+							<ul class="submenu-list">
+								<li>
+									<a href="services_more.html">Service #1</a>
+								</li>
+								<li>
+									<a href="services_more.html">Service #2</a>
+								</li>
+								<li>
+									<a href="services_more.html">Service #3</a>
+								</li>
+								<li>
+									<a href="services_more.html">Service #4</a>
+								</li>
+							</ul>
+							<a id="new-serv-btn" href="#">+ Add New Service</a>
+						</div>
+					</li>
+					<li class="sub-menu blog-submenu">
+						<a>blog</a>
+						<div class="sub-menu-block">
+							<a id="new-article-btn" href="#">+ Add New Article</a>
+							<ul class="submenu-list">
+								<li>
+									<a href="blog-more.html">Name of the article # 3</a>
+								</li>
+								<li>
+									<a href="blog-more.html">Name of the article # 2</a>
+								</li>
+								<li>
+									<a href="blog-more.html">Name of the article # 1</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="contact.html">contact us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section class="direction">
+		<div class="wrapper">
+			<a class="arrow-back" href="javascript:history.back()">
+				<img src="images/arrow.png" alt="arrow back">
+			</a>
+			<h3 class="direction-title">
+				<a href="javascript:history.back()">Review</a>
+			</h3>
+		</div>
+	</section>
+	<section class="site-container main-page section-padding-bottom">
+		<div class="review-desctop-bg">
+			<div class="wrapper">
+				<div class="for-phone">
+					<h4 class="phone-number">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<a href="tel:2251264455">225.126.4455</a>
+					</h4>
+					<a class="edit" href="#">
+						<img src="images/icon-edit.png" alt="edit icon">
+					</a>
+				</div>
+				<div class="fot-page-title">
+					<div class="page-title">
+						<h2 class="title">
+							<a href="#">Review</a>
+						</h2>
+						<h4 class="add-title">
+							<a href="#">Add Review</a>
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class="for-review-content">
+				<div class="wrapper">
+					<div class="review-border">
+						<ul class="review-list">
+							<li>
+								<div class="for-reviewer-thubnail">
+									<h3 class="edit-title">
+										<a class="edit" href="#">
+											<img src="images/icon-edit.png" alt="edit icon">
+										</a>
+									</h3>
+									<div class="img-wrapper">
+										<img src="images/review-profile-img.jpg" alt="review item">
+									</div>
+								</div>
+								<div class="owerflow-block">
+									<div class="border-group">
+										<div class="for-review-name">
+											<h2 class="article-title">Lorem Ipsum</h2>
+											<h3 class="edit-title">
+												<a class="edit" href="#">
+													<img src="images/icon-edit.png" alt="edit icon">
+												</a>
+											</h3>
+										</div>
+										<div class="for-review-date">
+											<h3 class="date">20.12.2016</h3>
+											<h3 class="edit-title">
+												<a class="edit" href="#">
+													<img src="images/icon-edit.png" alt="edit icon">
+												</a>
+											</h3>
+										</div>
+									</div>
+									<div class="for-review-description">
+										<h3 class="edit-title">
+											<a class="edit" href="#">
+												<img src="images/icon-edit.png" alt="edit icon">
+											</a>
+										</h3>
+										<div class="article-content">
+											<p>Lorem ipsum dolor sit amet, venenatis sollicitudin tincidunt turpis dui vitae, vel vitae id non rutrum, tortor iaculis dolor vel et, ipsum odio orci taciti nunc aenean, scelerisque condimentum lacinia tortor mattis. Tellus nostra fermentum lobortis, vitae aliquam, tempus sit metus vivamus alias vehicula</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="for-reviewer-thubnail">
+									<h3 class="edit-title">
+										<a class="edit" href="#">
+											<img src="images/icon-edit.png" alt="edit icon">
+										</a>
+									</h3>
+									<div class="img-wrapper">
+										<img src="images/review-profile-img.jpg" alt="review item">
+									</div>
+								</div>
+								<div class="owerflow-block">
+									<div class="border-group">
+										<div class="for-review-name">
+											<h2 class="article-title">Lorem Ipsum</h2>
+											<h3 class="edit-title">
+												<a class="edit" href="#">
+													<img src="images/icon-edit.png" alt="edit icon">
+												</a>
+											</h3>
+										</div>
+										<div class="for-review-date">
+											<h3 class="date">20.12.2016</h3>
+											<h3 class="edit-title">
+												<a class="edit" href="#">
+													<img src="images/icon-edit.png" alt="edit icon">
+												</a>
+											</h3>
+										</div>
+									</div>
+									<div class="for-review-description">
+										<h3 class="edit-title">
+											<a class="edit" href="#">
+												<img src="images/icon-edit.png" alt="edit icon">
+											</a>
+										</h3>
+										<div class="article-content">
+											<p>Lorem ipsum dolor sit amet, venenatis sollicitudin tincidunt turpis dui vitae, vel vitae id non rutrum, tortor iaculis dolor vel et, ipsum odio orci taciti nunc aenean, scelerisque condimentum lacinia tortor mattis. Tellus nostra fermentum lobortis, vitae aliquam, tempus sit metus vivamus alias vehicula</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="for-reviewer-thubnail">
+									<h3 class="edit-title">
+										<a class="edit" href="#">
+											<img src="images/icon-edit.png" alt="edit icon">
+										</a>
+									</h3>
+									<div class="img-wrapper">
+										<img src="images/review-profile-img.jpg" alt="review item">
+									</div>
+								</div>
+								<div class="owerflow-block">
+									<div class="border-group">
+										<div class="for-review-name">
+											<h2 class="article-title">Lorem Ipsum</h2>
+											<h3 class="edit-title">
+												<a class="edit" href="#">
+													<img src="images/icon-edit.png" alt="edit icon">
+												</a>
+											</h3>
+										</div>
+										<div class="for-review-date">
+											<h3 class="date">20.12.2016</h3>
+											<h3 class="edit-title">
+												<a class="edit" href="#">
+													<img src="images/icon-edit.png" alt="edit icon">
+												</a>
+											</h3>
+										</div>
+									</div>
+									<div class="for-review-description">
+										<h3 class="edit-title">
+											<a class="edit" href="#">
+												<img src="images/icon-edit.png" alt="edit icon">
+											</a>
+										</h3>
+										<div class="article-content">
+											<p>Lorem ipsum dolor sit amet, venenatis sollicitudin tincidunt turpis dui vitae, vel vitae id non rutrum, tortor iaculis dolor vel et, ipsum odio orci taciti nunc aenean, scelerisque condimentum lacinia tortor mattis. Tellus nostra fermentum lobortis, vitae aliquam, tempus sit metus vivamus alias vehicula</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="for-reviewer-thubnail">
+									<h3 class="edit-title">
+										<a class="edit" href="#">
+											<img src="images/icon-edit.png" alt="edit icon">
+										</a>
+									</h3>
+									<div class="img-wrapper">
+										<img src="images/review-profile-img.jpg" alt="review item">
+									</div>
+								</div>
+								<div class="owerflow-block">
+									<div class="border-group">
+										<div class="for-review-name">
+											<h2 class="article-title">Lorem Ipsum</h2>
+											<h3 class="edit-title">
+												<a class="edit" href="#">
+													<img src="images/icon-edit.png" alt="edit icon">
+												</a>
+											</h3>
+										</div>
+										<div class="for-review-date">
+											<h3 class="date">20.12.2016</h3>
+											<h3 class="edit-title">
+												<a class="edit" href="#">
+													<img src="images/icon-edit.png" alt="edit icon">
+												</a>
+											</h3>
+										</div>
+									</div>
+									<div class="for-review-description">
+										<h3 class="edit-title">
+											<a class="edit" href="#">
+												<img src="images/icon-edit.png" alt="edit icon">
+											</a>
+										</h3>
+										<div class="article-content">
+											<p>Lorem ipsum dolor sit amet, venenatis sollicitudin tincidunt turpis dui vitae, vel vitae id non rutrum, tortor iaculis dolor vel et, ipsum odio orci taciti nunc aenean, scelerisque condimentum lacinia tortor mattis. Tellus nostra fermentum lobortis, vitae aliquam, tempus sit metus vivamus alias vehicula</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="for-seo-toolbar">
+			<div class="wrapper">
+				<div class="box-border">
+					<h2 class="seo-toolbar-title">SEO Toolbar</h2>
+					<ul class="seo-toolbar-list">
+						<li>
+							<a href="#">Meta Tag (Title)</a>
+						</li>
+						<li>
+							<a href="#">Meta Tag (Description)</a>
+						</li>
+						<li>
+							<a href="#">Meta Tag (Key Words)</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="site-control-btn">
+			<div class="wrapper">
+				<a class="to-website-btn" href="#">
+					<span>Go to the website</span>
+				</a>
+			</div>
+		</div>
+	</section>
+	<footer class="site-container footer-inside"></footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
